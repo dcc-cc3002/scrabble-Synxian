@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"m":"scrabble.main","l":"cl.uchile.dcc.scrabble.gui"},{"m":"scrabble.main","l":"cl.uchile.dcc.scrabble.types"}]

@@ -1,10 +1,12 @@
 package cl.uchile.dcc.scrabble.types;
 
+import cl.uchile.dcc.scrabble.types.numbers.ScrBinary;
+import cl.uchile.dcc.scrabble.types.numbers.ScrFloat;
+import cl.uchile.dcc.scrabble.types.numbers.ScrInt;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class ScrBinaryTest {
     private ScrBinary binary49;
@@ -105,10 +107,10 @@ public class ScrBinaryTest {
         var testStructure2 = new ScrInt(-281);
         var testStructure3 = new ScrBinary("0000010100100001");//1313
         var testStructure4 = new ScrBinary("1111111001011100");//-420
-        assertEquals(new ScrBinary("1111110101000011"), testStructure4.add(testStructure2));
-        assertEquals(new ScrBinary("0000001100110110"), testStructure4.add(testStructure1));
-        assertEquals(new ScrBinary("0000010101010010"), binary49.add(testStructure3));
-        assertEquals(new ScrBinary("1111111001111011"), binary31.add(testStructure4));
+        assertEquals(new ScrInt(-701), testStructure4.addToScrInt(testStructure2));
+        assertEquals(new ScrInt(1242-420), testStructure4.addToScrInt(testStructure1));
+        assertEquals(new ScrBinary("0000010101010010"), binary49.addToScrBinary(testStructure3));
+        assertEquals(new ScrBinary("1111111001111011"), binary31.addToScrBinary(testStructure4));
     }
 
     @Test
@@ -117,10 +119,10 @@ public class ScrBinaryTest {
         var testStructure2 = new ScrInt(-281);
         var testStructure3 = new ScrBinary("0000010100100001");//1313
         var testStructure4 = new ScrBinary("1111111001011100");//-420
-        assertEquals(new ScrBinary("1111111101110101"), testStructure4.subtract(testStructure2));//-139
-        assertEquals(new ScrBinary("1111100110000010"), testStructure4.subtract(testStructure1));
-        assertEquals(new ScrBinary("1111101100010000"), binary49.subtract(testStructure3));
-        assertEquals(new ScrBinary("0000000111000011"), binary31.subtract(testStructure4));
+        assertEquals(new ScrInt(139), testStructure4.subtractToScrInt(testStructure2));//-139
+        assertEquals(new ScrInt(1662), testStructure4.subtractToScrInt(testStructure1));
+        assertEquals(new ScrBinary("0000010011110000"), binary49.subtractToScrBinary(testStructure3));
+        assertEquals(new ScrBinary("1111111000111101"), binary31.subtractToScrBinary(testStructure4));
     }
 
     @Test
@@ -128,10 +130,10 @@ public class ScrBinaryTest {
         var testStructure1 = new ScrInt(3);
         var testStructure2 = new ScrInt(-28);
         var testStructure4 = new ScrBinary("1111111001011100");//-420
-        assertEquals(new ScrBinary("0010110111110000"), testStructure4.multiply(testStructure2));
-        assertEquals(new ScrBinary("1111101100010100"), testStructure4.multiply(testStructure1));
-        assertEquals(new ScrBinary("1010111110011100"), binary49.multiply(testStructure4));
-        assertEquals(new ScrBinary("1100110100100100"), binary31.multiply(testStructure4));
+        assertEquals(new ScrInt(-420*-28), testStructure4.multiplyAScrInt(testStructure2));
+        assertEquals(new ScrInt(3*-420), testStructure4.multiplyAScrInt(testStructure1));
+        assertEquals(new ScrBinary("1010111110011100"), binary49.multiplyAScrBinary(testStructure4));
+        assertEquals(new ScrBinary("1100110100100100"), binary31.multiplyAScrBinary(testStructure4));
     }
 
     @Test
@@ -140,9 +142,9 @@ public class ScrBinaryTest {
         var testStructure2 = new ScrInt(-28);
         var testStructure3 = new ScrBinary("0000000000000010");
         var testStructure4 = new ScrBinary("1111111001011100");//-420
-        assertEquals(new ScrBinary("0000000000001111"), testStructure4.divide(testStructure2));
-        assertEquals(new ScrBinary("1111111101110100"), testStructure4.divide(testStructure1));
-        assertEquals(new ScrBinary("0000000000000000"), binary49.divide(testStructure4));
-        assertEquals(new ScrBinary("0000000000001111"), binary31.divide(testStructure3));
+        assertEquals(new ScrInt(0), testStructure4.divideAScrInt(testStructure2));
+        assertEquals(new ScrInt(0), testStructure4.divideAScrInt(testStructure1));
+        assertEquals(new ScrBinary("1111111111111000"), binary49.divideAScrBinary(testStructure4));
+        assertEquals(new ScrBinary("0000000000000000"), binary31.divideAScrBinary(testStructure3));
     }
 }

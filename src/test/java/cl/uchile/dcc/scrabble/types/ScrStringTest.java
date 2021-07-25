@@ -1,5 +1,8 @@
 package cl.uchile.dcc.scrabble.types;
 
+import cl.uchile.dcc.scrabble.types.numbers.ScrBinary;
+import cl.uchile.dcc.scrabble.types.numbers.ScrFloat;
+import cl.uchile.dcc.scrabble.types.numbers.ScrInt;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -59,11 +62,11 @@ public class ScrStringTest {
         var testStructure5 = new ScrBool(true);
         var testStructure6 = new ScrBool(false);
         assertEquals(new ScrString("the cakeis a lie"), str1.add(str2));
-        assertEquals(new ScrString("the cake12451"), str1.add(testStructure1));
-        assertEquals(new ScrString("is a lie145.7"), str2.add(testStructure2));
-        assertEquals(new ScrString("the cake0000000110100100"), str1.add(testStructure3));
-        assertEquals(new ScrString("is a lie1001001010000111"), str2.add(testStructure4));
-        assertEquals(new ScrString("is a lietrue"), str2.add(testStructure5));
-        assertEquals(new ScrString("the cakeis a liefalse"), str1.add(str2).add(testStructure6));
+        assertEquals(new ScrString("the cake12451"), testStructure1.addToString(str1));
+        assertEquals(new ScrString("is a lie145.7"), testStructure2.addToString(str2));
+        assertEquals(new ScrString("the cake0000000110100100"), testStructure3.addToString(str1));
+        assertEquals(new ScrString("is a lie1001001010000111"), testStructure4.addToString(str2));
+        assertEquals(new ScrString("is a lietrue"), testStructure5.addToString(str2));
+        assertEquals(new ScrString("the cakeis a liefalse"), testStructure6.addToString(str2.addToString(str1)));
     }
 }

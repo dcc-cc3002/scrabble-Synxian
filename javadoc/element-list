@@ -1,0 +1,10 @@
+module:scrabble.main
+cl.uchile.dcc.scrabble.AST
+cl.uchile.dcc.scrabble.AST.Nodes
+cl.uchile.dcc.scrabble.AST.Operations
+cl.uchile.dcc.scrabble.AST.Transformations
+cl.uchile.dcc.scrabble.gui
+cl.uchile.dcc.scrabble.MemoryOpFactory.AstFactory
+cl.uchile.dcc.scrabble.MemoryOpFactory.TypesFactory
+cl.uchile.dcc.scrabble.types
+cl.uchile.dcc.scrabble.types.numbers

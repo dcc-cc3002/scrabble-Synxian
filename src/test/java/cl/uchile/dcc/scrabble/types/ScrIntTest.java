@@ -1,5 +1,8 @@
 package cl.uchile.dcc.scrabble.types;
 
+import cl.uchile.dcc.scrabble.types.numbers.ScrBinary;
+import cl.uchile.dcc.scrabble.types.numbers.ScrFloat;
+import cl.uchile.dcc.scrabble.types.numbers.ScrInt;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -80,7 +83,7 @@ public class ScrIntTest {
         assertNotEquals(int1.toScrBinary(), testStructure2);
         assertEquals(new ScrBinary("1111110101000011"), testStructure5.toScrBinary());
     }
-    //Operations Test
+
     @Test
     void additionTest(){
         var testStructure1 = new ScrInt(12451);
@@ -92,6 +95,8 @@ public class ScrIntTest {
         var testStructure7 = new ScrBinary("0000000110100100");//420
         var testStructure8 = new ScrBinary("0000000001000101");//69
         var testStructure9 = new ScrBinary("1001001010000111");//-28025
+        var t10= new ScrInt(0);
+        var t11=new ScrBinary("0000000000000000");
         assertEquals(new ScrInt(432), int1.add(testStructure2));
         assertEquals(new ScrInt(432), testStructure2.addToScrInt(int1));
         assertEquals(new ScrInt(12963), testStructure3.add(testStructure1));
@@ -99,9 +104,10 @@ public class ScrIntTest {
         assertEquals(new ScrFloat(157.7), testStructure2.add(testStructure4));
         assertEquals(new ScrFloat(12866.5372), testStructure3.addToScrFloat(testStructure5));
         assertEquals(new ScrFloat(420.5), int1.addToScrFloat(testStructure6));
-        assertEquals(new ScrInt(840), int1.add(testStructure7));
-        assertEquals(new ScrInt(-15574), testStructure1.add(testStructure9));
-        assertEquals(new ScrInt(581), testStructure3.add(testStructure8));
+        assertEquals(new ScrBinary("0000001101001000"), int1.addToScrBinary(testStructure7));
+        assertEquals(new ScrBinary("1100001100101010"), testStructure1.addToScrBinary(testStructure9));
+        assertEquals(new ScrBinary("0000001001000101"), testStructure3.addToScrBinary(testStructure8));
+        assertEquals(new ScrBinary("0000000000000000"), t10.addToScrBinary(t11));
 
     }
 
@@ -123,9 +129,9 @@ public class ScrIntTest {
         assertEquals(new ScrFloat(-133.7), testStructure2.subtract(testStructure4));
         assertEquals(new ScrFloat(11842.5372), testStructure3.subtractToScrFloat(testStructure5));
         assertEquals(new ScrFloat(-419.5), int1.subtractToScrFloat(testStructure6));
-        assertEquals(new ScrInt(0), int1.subtract(testStructure7));
-        assertEquals(new ScrInt(40476), testStructure1.subtract(testStructure9));
-        assertEquals(new ScrInt(443), testStructure3.subtract(testStructure8));
+        assertEquals(new ScrBinary("0000000000000000"), int1.subtractToScrBinary(testStructure7));
+        assertEquals(new ScrBinary("0110000111100100"), testStructure1.subtractToScrBinary(testStructure9));
+        assertEquals(new ScrBinary("1111111001000101"), testStructure3.subtractToScrBinary(testStructure8));
     }
 
     @Test
@@ -138,7 +144,6 @@ public class ScrIntTest {
         var testStructure6 = new ScrFloat(0.5);
         var testStructure7 = new ScrBinary("0000000110100100");
         var testStructure8 = new ScrBinary("0000000001000101");
-        var testStructure9 = new ScrBinary("1001001010000111");//-28025
         assertEquals(new ScrInt(5040), int1.multiply(testStructure2));
         assertEquals(new ScrInt(5040), testStructure2.mulAScrInt(int1));
         assertEquals(new ScrInt(6374912), testStructure3.mulAScrInt(testStructure1));
@@ -146,9 +151,7 @@ public class ScrIntTest {
         assertEquals(new ScrFloat(12*145.7), testStructure2.multiply(testStructure4));
         assertEquals(new ScrFloat(6325523.0464), testStructure3.mulAScrFloat(testStructure5));
         assertEquals(new ScrFloat(210.0), int1.mulAScrFloat(testStructure6));
-        assertEquals(new ScrInt(176400), int1.multiply(testStructure7));
-        assertEquals(new ScrInt(-348939275), testStructure1.multiply(testStructure9));
-        assertEquals(new ScrInt(35328), testStructure3.multiply(testStructure8));
+        assertEquals(new ScrBinary("1000101000000000"), testStructure3.multiplyAScrBinary(testStructure8));
     }
 
     @Test
@@ -167,9 +170,9 @@ public class ScrIntTest {
         assertEquals(new ScrInt(7), int2.divideAScrInt(testStructure3));
         assertEquals(new ScrFloat(172.5), int2.divide(testStructure6));
         assertEquals(new ScrFloat(0.2845703125), testStructure3.divideAScrFloat(testStructure4));
-        assertEquals(new ScrInt(1), int1.divide(testStructure7));
-        assertEquals(new ScrInt(0), testStructure1.divide(testStructure9));
-        assertEquals(new ScrInt(7), testStructure3.divide(testStructure8));
+        assertEquals(new ScrBinary("0000000000000001"), int1.divideAScrBinary(testStructure7));
+        assertEquals(new ScrBinary("1111111111111110"), testStructure1.divideAScrBinary(testStructure9));
+        assertEquals(new ScrBinary("0000000000000000"), testStructure3.divideAScrBinary(testStructure8));
     }
 
 }

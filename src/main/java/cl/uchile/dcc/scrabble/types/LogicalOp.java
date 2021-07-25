@@ -1,5 +1,7 @@
 package cl.uchile.dcc.scrabble.types;
 
+import cl.uchile.dcc.scrabble.types.numbers.ScrBinary;
+
 /**
  * This interface contains Logical operations for Scr objects (binary and bool)
  * It contains logic and, or & negation
@@ -51,7 +53,7 @@ public interface LogicalOp {
     public ScrBinary orByBinary(ScrBinary bin);
 
     /**
-     * Logical negation for Scr Binary ot Bool
+     * Logical negation for Scr cl.uchile.dcc.scrabble.AST.Operations.Binary ot Bool
      * @return a Scr object with the result
      */
     public LogicalOp neg();

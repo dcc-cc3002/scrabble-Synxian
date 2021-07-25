@@ -1,5 +1,8 @@
 package cl.uchile.dcc.scrabble.types;
 
+import cl.uchile.dcc.scrabble.MemoryOpFactory.TypesFactory.ScrTypesFactory;
+import cl.uchile.dcc.scrabble.types.numbers.ScrBinary;
+
 import java.util.Objects;
 
 /**
@@ -8,7 +11,7 @@ import java.util.Objects;
  *
  * @author Felix Melo Aviles
  */
-public class ScrBool implements LogicalOp{
+public class ScrBool implements LogicalOp, SType{
 
     /**
      * then immutable value of this ScrString
@@ -62,7 +65,12 @@ public class ScrBool implements LogicalOp{
      * @return a ScrString representation of the value of this object
      */
     public ScrString toScrString(){
-        return new ScrString(this.toString());
+        return ScrTypesFactory.getScrStringFlyweight(this.toString());
+    }
+
+    @Override
+    public ScrString addToString(ScrString addend) {
+        return ScrTypesFactory.getScrStringFlyweight(addend.toString()+this.toString());
     }
 
     /**
@@ -70,7 +78,7 @@ public class ScrBool implements LogicalOp{
      * @return a ScrBool representation of the value of this object
      */
     public ScrBool toScrBool(){
-        return new ScrBool(this.scrBool);
+        return ScrTypesFactory.getScrBoolFlyweight(this.scrBool);
     }
 
     /**
@@ -98,7 +106,7 @@ public class ScrBool implements LogicalOp{
      */
     @Override
     public ScrBool andByBool(ScrBool bool) {
-        return new ScrBool(bool.getValue() && this.getValue());
+        return ScrTypesFactory.getScrBoolFlyweight(bool.getValue() && this.getValue());
     }
 
     /**
@@ -108,7 +116,7 @@ public class ScrBool implements LogicalOp{
      */
     @Override
     public ScrBinary andByBinary(ScrBinary bin) {
-        return new ScrBinary(this.getValue() ? bin.getValue() : "0000000000000000" );
+        return ScrTypesFactory.getScrBinaryFlyweight(this.getValue() ? bin.getValue() : "0000000000000000" );
     }
 
     /**
@@ -127,8 +135,8 @@ public class ScrBool implements LogicalOp{
      * @return a ScrBool object wih the result
      */
     @Override
-    public LogicalOp orByBool(ScrBool bool) {
-        return new ScrBool(bool.getValue()||this.getValue());
+    public ScrBool orByBool(ScrBool bool) {
+        return ScrTypesFactory.getScrBoolFlyweight(bool.getValue()||this.getValue());
     }
 
     /**
@@ -138,7 +146,7 @@ public class ScrBool implements LogicalOp{
      */
     @Override
     public ScrBinary orByBinary(ScrBinary bin) {
-        return new ScrBinary(this.getValue() ? "1111111111111111": bin.getValue());
+        return ScrTypesFactory.getScrBinaryFlyweight(this.getValue() ? "1111111111111111": bin.getValue());
     }
 
     /**
@@ -147,6 +155,6 @@ public class ScrBool implements LogicalOp{
      */
     @Override
     public ScrBool neg() {
-        return new ScrBool(!this.getValue());
+        return ScrTypesFactory.getScrBoolFlyweight(!this.getValue());
     }
 }

@@ -1,5 +1,6 @@
 package cl.uchile.dcc.scrabble.types;
 
+import cl.uchile.dcc.scrabble.types.numbers.ScrBinary;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -54,7 +55,7 @@ public class ScrBoolTest {
         assertEquals(bool2, bool2.toScrBool());
     }
 
-    //Operations test
+    //cl.uchile.dcc.scrabble.AST.Operations test
     @Test
     void logicAndTest(){
         var testStructure1 = new ScrBinary("0001011010011010");

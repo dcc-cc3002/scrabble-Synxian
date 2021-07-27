@@ -1,9 +1,7 @@
 package cl.uchile.dcc.scrabble.AST.Nodes;
 
-import cl.uchile.dcc.scrabble.MemoryOpFactory.AstFactory.NodeStringFactory;
 import cl.uchile.dcc.scrabble.MemoryOpFactory.AstFactory.NodeTypeFactory;
 import cl.uchile.dcc.scrabble.types.numbers.ScrBinary;
-import cl.uchile.dcc.scrabble.types.numbers.ScrInt;
 
 /**
  * Class that represent a ScrBinary node
@@ -137,7 +135,7 @@ public class NodeBinary extends AbstractNodeTypes{
      */
     @Override
     public NodeInt multiplyAIntNode(NodeInt node) {
-        return NodeTypeFactory.getNodeIntFlyweight(this.getValue().multiplyAScrInt(node.getValue()).getValue());
+        return NodeTypeFactory.getNodeIntFlyweight(this.getValue().mulAScrInt(node.getValue()).getValue());
     }
 
     /**
@@ -147,7 +145,7 @@ public class NodeBinary extends AbstractNodeTypes{
      */
     @Override
     public NodeFloat multiplyAFloatNode(NodeFloat node) {
-        return NodeTypeFactory.getNodeFloatFlyweight(this.getValue().multiplyAScrFloat(node.getValue()).getValue());
+        return NodeTypeFactory.getNodeFloatFlyweight(this.getValue().mulAScrFloat(node.getValue()).getValue());
     }
 
     /**
@@ -157,7 +155,7 @@ public class NodeBinary extends AbstractNodeTypes{
      */
     @Override
     public NodeBinary multiplyABinaryNode(NodeBinary node) {
-        return NodeTypeFactory.getNodeBinaryFlyweight(this.getValue().multiplyAScrBinary(node.getValue()).getValue());
+        return NodeTypeFactory.getNodeBinaryFlyweight(this.getValue().mulAScrBinary(node.getValue()).getValue());
     }
 
     /**
@@ -282,6 +280,46 @@ public class NodeBinary extends AbstractNodeTypes{
     @Override
     public NodeBinary toNodeBinary() {
         return this;
+    }
+
+    /**
+     * {@inheritDoc}
+     * @param node {@inheritDoc}
+     * @return {@inheritDoc}
+     */
+    @Override
+    public int compareTo(ScrNode node){
+        return node.compareToBinary(this);
+    }
+
+    /**
+     * {@inheritDoc}
+     * @param node {@inheritDoc}
+     * @return {@inheritDoc}
+     */
+    @Override
+    public Integer compareToInt(NodeInt node){
+        return node.getValue().compareTo(this.getValue());
+    }
+
+    /**
+     * {@inheritDoc}
+     * @param node {@inheritDoc}
+     * @return {@inheritDoc}
+     */
+    @Override
+    public Integer compareToFloat(NodeFloat node){
+        return node.getValue().compareTo(this.getValue());
+    }
+
+    /**
+     * {@inheritDoc}
+     * @param node {@inheritDoc}
+     * @return {@inheritDoc}
+     */
+    @Override
+    public Integer compareToBinary(NodeBinary node){
+        return node.getValue().compareTo(this.getValue());
     }
 
 }

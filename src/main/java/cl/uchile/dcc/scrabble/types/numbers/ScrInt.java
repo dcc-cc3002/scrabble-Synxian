@@ -3,6 +3,7 @@ package cl.uchile.dcc.scrabble.types.numbers;
 import cl.uchile.dcc.scrabble.MemoryOpFactory.TypesFactory.ScrTypesFactory;
 import cl.uchile.dcc.scrabble.types.AbstractType;
 import cl.uchile.dcc.scrabble.types.ScrString;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Objects;
 
@@ -12,7 +13,7 @@ import java.util.Objects;
  *
  * @author Felix Melo Aviles
  */
-public class ScrInt extends AbstractType implements IOperations {
+public class ScrInt extends AbstractType implements IOperations, Comparable<IOperations> {
 
     /**
      *
@@ -289,5 +290,18 @@ public class ScrInt extends AbstractType implements IOperations {
         ScrBinary oldBin= ScrTypesFactory.getScrBinaryFlyweight(b);
         ScrBinary negBin= oldBin.neg();
         return negBin.addToScrBinary(ScrTypesFactory.getScrBinaryFlyweight("0000000000000001")).getValue();
+    }
+
+    /**
+     * Compares this ScrInt with the given one, if the Object called on is greater than the parameter, the return will be 1 or more,
+     * if the values are the same, the return will be 0, otherwise it'll be -1 or less
+     * @param num  the ScrObject to be compared with
+     * @return 1 or more if the object called on is greater then the parameter, 0 if equals, -1 or less if the called object is smaller
+     */
+    @Override
+    public int compareTo(IOperations num) {
+        Double esta= this.toScrFloat().getValue();
+        Double com= num.toScrFloat().getValue();
+        return Double.compare(esta, com);
     }
 }

@@ -94,5 +94,8 @@ public interface IOperations extends SType {
      */
     public ScrFloat divideAScrFloat (ScrFloat num);
 
+    int compareTo(IOperations num);
+
+    ScrFloat toScrFloat();
 
 }

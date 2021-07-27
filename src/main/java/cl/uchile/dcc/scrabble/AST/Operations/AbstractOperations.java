@@ -1,20 +1,21 @@
 package cl.uchile.dcc.scrabble.AST.Operations;
 
+import cl.uchile.dcc.scrabble.AST.ITreeNodes;
 import cl.uchile.dcc.scrabble.AST.TreeNodes;
 import cl.uchile.dcc.scrabble.types.SType;
 
 /**
  * Abstract class for the Operations between two Nodes in the ast
  */
-public abstract class AbstractOperations implements TreeNodes {
+public abstract class AbstractOperations implements TreeNodes, ITreeNodes {
     /**
      * The right Node of the Ast
      */
-    protected final TreeNodes rightNode;
+    protected TreeNodes rightNode;
     /**
      * The left Node of the Ast
      */
-    protected final TreeNodes leftNode;
+    protected TreeNodes leftNode;
 
     /**
      * The constructor for the Ast evaluation

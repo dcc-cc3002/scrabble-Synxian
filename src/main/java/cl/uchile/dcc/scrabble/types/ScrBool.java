@@ -2,6 +2,7 @@ package cl.uchile.dcc.scrabble.types;
 
 import cl.uchile.dcc.scrabble.MemoryOpFactory.TypesFactory.ScrTypesFactory;
 import cl.uchile.dcc.scrabble.types.numbers.ScrBinary;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Objects;
 
@@ -11,7 +12,7 @@ import java.util.Objects;
  *
  * @author Felix Melo Aviles
  */
-public class ScrBool implements LogicalOp, SType{
+public class ScrBool implements LogicalOp, SType, Comparable<ScrBool>{
 
     /**
      * then immutable value of this ScrString
@@ -72,6 +73,7 @@ public class ScrBool implements LogicalOp, SType{
     public ScrString addToString(ScrString addend) {
         return ScrTypesFactory.getScrStringFlyweight(addend.toString()+this.toString());
     }
+
 
     /**
      * Returns a ScrBool representing this ScrBool value
@@ -156,5 +158,16 @@ public class ScrBool implements LogicalOp, SType{
     @Override
     public ScrBool neg() {
         return ScrTypesFactory.getScrBoolFlyweight(!this.getValue());
+    }
+
+    /**
+     * Compares this ScrBool with another ScrBool, if the Object called on is greater than the parameter (true>false), the return will be 1 or more,
+     * if the values are the same, the return will be 0, otherwise it'll be -1 or less
+     * @param o the ScrBool to be compared with
+     * @return 1 or more if the object called on is greater then the parameter, 0 if equals, -1 or less if the called object is smaller
+     */
+    @Override
+    public int compareTo(ScrBool o) {
+        return Boolean.compare(this.getValue(),o.getValue());
     }
 }

@@ -14,7 +14,7 @@ import java.util.Objects;
  *
  * @author Felix Melo Aviles
  */
-public class ScrBinary extends AbstractType implements LogicalOp {
+public class ScrBinary extends AbstractType implements IOperations, LogicalOp, Comparable<IOperations> {
     /**
      * then immutable value of this ScrBinary
      */
@@ -210,6 +210,11 @@ public class ScrBinary extends AbstractType implements LogicalOp {
         return ScrTypesFactory.getScrIntFlyweight(newBin.getValue());
     }
 
+    @Override
+    public IOperations subtract(IOperations num) {
+        return null;
+    }
+
     /**
      * Adds a ScrBinary to this ScrBinary, returning a new-ScrBinary
      * @param num the ScrBinary to add
@@ -253,6 +258,11 @@ public class ScrBinary extends AbstractType implements LogicalOp {
         return ScrTypesFactory.getScrIntFlyweight(newBin.getValue());
     }
 
+    @Override
+    public IOperations multiply(IOperations num) {
+        return null;
+    }
+
     /**
      * Subtracts a ScrBinary to this ScrBinary, returning a new-ScrBinary
      * @param num the ScrBinary to subtract
@@ -269,7 +279,7 @@ public class ScrBinary extends AbstractType implements LogicalOp {
      * @param num the ScrInt to multiply by
      * @return a ScrBinary with the result
      */
-    public ScrInt multiplyAScrInt(ScrInt num){
+    public ScrInt mulAScrInt(ScrInt num){
         int fac1=this.toInt(this.getValue());
         int fac2= num.getValue();
         ScrInt newBin = ScrTypesFactory.getScrIntFlyweight(fac1*fac2);
@@ -281,7 +291,7 @@ public class ScrBinary extends AbstractType implements LogicalOp {
      * @param num the ScrBinary to multiply by
      * @return a ScrBinary with the result
      */
-    public ScrBinary multiplyAScrBinary(ScrBinary num){
+    public ScrBinary mulAScrBinary(ScrBinary num){
         int fac1=this.toInt(this.getValue());
         int fac2=num.toInt(num.getValue());
         ScrInt newBin = ScrTypesFactory.getScrIntFlyweight(fac1*fac2);
@@ -312,6 +322,11 @@ public class ScrBinary extends AbstractType implements LogicalOp {
         return ScrTypesFactory.getScrBinaryFlyweight(newBin.toScrBinary().getValue());
     }
 
+    @Override
+    public IOperations add(IOperations num) {
+        return null;
+    }
+
     /**
      * Adds this ScrBinary to a ScrFloat, returning a ScrFloat
      * @param bin the ScrFloat to be added
@@ -335,8 +350,13 @@ public class ScrBinary extends AbstractType implements LogicalOp {
      * @param bin the ScrBinary to be multiplied
      * @return a ScrFloat with the result
      */
-    public ScrFloat multiplyAScrFloat(ScrFloat bin){
+    public ScrFloat mulAScrFloat(ScrFloat bin){
         return ScrTypesFactory.getScrFloatFlyweight(this.toScrFloat().getValue()*bin.getValue());
+    }
+
+    @Override
+    public IOperations divide(IOperations num) {
+        return null;
     }
 
     /**
@@ -380,5 +400,18 @@ public class ScrBinary extends AbstractType implements LogicalOp {
     }
     private int bitToInt(char bit) {
         return bit == '0' ? 0 : 1;
+    }
+
+    /**
+     * Compares this ScrBinary with the given one, if the Object called on is greater than the parameter, the return will be 1 or more,
+     * if the values are the same, the return will be 0, otherwise it'll be -1 or less
+     * @param num  the ScrObject to be compared with
+     * @return 1 or more if the object called on is greater then the parameter, 0 if equals, -1 or less if the called object is smaller
+     */
+    @Override
+    public int compareTo(IOperations num) {
+        Double esta= this.toScrFloat().getValue();
+        Double com= num.toScrFloat().getValue();
+        return Double.compare(esta, com);
     }
 }

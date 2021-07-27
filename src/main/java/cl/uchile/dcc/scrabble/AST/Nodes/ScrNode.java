@@ -1,11 +1,12 @@
 package cl.uchile.dcc.scrabble.AST.Nodes;
 
+import cl.uchile.dcc.scrabble.AST.ITreeNodes;
 import cl.uchile.dcc.scrabble.AST.TreeNodes;
 
 /**
  * Interface that wraps the methods applicable to Scr objects nodes
  */
-public interface ScrNode extends TreeNodes {
+public interface ScrNode extends TreeNodes, Comparable<ScrNode>, ITreeNodes {
     //Addition
     /**
      * Adds the values of two nodes
@@ -212,4 +213,54 @@ public interface ScrNode extends TreeNodes {
      * @return a BoolNode
      */
     NodeBool toNodeBool();
+
+    //control de flujo
+
+    /**
+     * Compares this node with the given one, if the Node called on is greater than the parameter, the return will be 1 or more,
+     * if the values are the same, the return will be 0, otherwise it'll be -1 or less
+     * @param node  the node to be compared with
+     * @return 1 or more if the object called on is greater then the parameter, 0 if equals, -1 or less if the called object is smaller
+     */
+    int compareTo(ScrNode node);
+
+    /**
+     * Compares this node with a ScrNode Int, if the Node called on is greater than the parameter, the return will be -1 or less,
+     * if the values are the same, the return will be 0, otherwise it'll be 1 or more
+     * @param node the NodeInt to be compared with
+     * @return -1 or less if the object called on is greater then the parameter, 0 if equals, 1 or more if the called object is smaller
+     */
+    Integer compareToInt(NodeInt node);
+
+    /**
+     * Compares this node with a ScrNode Float, if the Node called on is greater than the parameter, the return will be -1 or less,
+     * if the values are the same, the return will be 0, otherwise it'll be 1 or more
+     * @param node the NodeFloat to be compared with
+     * @return -1 or less if the object called on is greater then the parameter, 0 if equals, 1 or more if the called object is smaller
+     */
+    Integer compareToFloat(NodeFloat node);
+
+    /**
+     * Compares this node with a ScrNode Binary, if the Node called on is greater than the parameter, the return will be -1 or less,
+     * if the values are the same, the return will be 0, otherwise it'll be 1 or more
+     * @param node the NodeBinary to be compared with
+     * @return -1 or less if the object called on is greater then the parameter, 0 if equals, 1 or more if the called object is smaller
+     */
+    Integer compareToBinary(NodeBinary node);
+
+    /**
+     * Compares this node with a ScrNode String, if the Node called on is greater (ASCII) than the parameter, the return will be -1 or less,
+     * if the values are the same, the return will be 0, otherwise it'll be 1 or more
+     * @param node the NodeString to be compared with
+     * @return -1 or less if the object called on is greater then the parameter, 0 if equals, 1 or more if the called object is smaller
+     */
+    Integer compareToString(NodeString node);
+
+    /**
+     * Compares this node with a ScrNode Bool, if the Node called on is greater (true>false) than the parameter, the return will be -1 or less,
+     * if the values are the same, the return will be 0, otherwise it'll be 1 or more
+     * @param node the NodeBool to be compared with
+     * @return -1 or less if the object called on is greater then the parameter, 0 if equals, 1 or more if the called object is smaller
+     */
+    Integer compareToBool(NodeBool node);
 }

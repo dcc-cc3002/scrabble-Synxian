@@ -175,4 +175,21 @@ public class ScrIntTest {
         assertEquals(new ScrBinary("0000000000000000"), testStructure3.divideAScrBinary(testStructure8));
     }
 
+    @Test
+    void compareTest(){
+        var testStructure1 = new ScrInt(12);
+        var testStructure2 = new ScrFloat(145.7);
+        var testStructure3 = new ScrFloat(0.4);
+        var testStructure4 = new ScrFloat(12.0);
+        var testStructure5 = new ScrBinary("1001001010000111");
+        var testStructure6 = new ScrBinary("0000000000000000");
+        var testStructure7 = new ScrInt(-28025);
+        assertEquals(testStructure1.compareTo(testStructure2),-1);
+        assertEquals(testStructure1.compareTo(testStructure3),1);
+        assertEquals(testStructure1.compareTo(testStructure4),0);
+        assertEquals(testStructure1.compareTo(testStructure5),1);
+        assertEquals(testStructure7.compareTo(testStructure6),-1);
+        assertEquals(testStructure7.compareTo(testStructure5),0);
+        assertEquals(testStructure1.compareTo(testStructure1),0);
+    }
 }

@@ -130,10 +130,10 @@ public class ScrBinaryTest {
         var testStructure1 = new ScrInt(3);
         var testStructure2 = new ScrInt(-28);
         var testStructure4 = new ScrBinary("1111111001011100");//-420
-        assertEquals(new ScrInt(-420*-28), testStructure4.multiplyAScrInt(testStructure2));
-        assertEquals(new ScrInt(3*-420), testStructure4.multiplyAScrInt(testStructure1));
-        assertEquals(new ScrBinary("1010111110011100"), binary49.multiplyAScrBinary(testStructure4));
-        assertEquals(new ScrBinary("1100110100100100"), binary31.multiplyAScrBinary(testStructure4));
+        assertEquals(new ScrInt(-420*-28), testStructure4.mulAScrInt(testStructure2));
+        assertEquals(new ScrInt(3*-420), testStructure4.mulAScrInt(testStructure1));
+        assertEquals(new ScrBinary("1010111110011100"), binary49.mulAScrBinary(testStructure4));
+        assertEquals(new ScrBinary("1100110100100100"), binary31.mulAScrBinary(testStructure4));
     }
 
     @Test

@@ -4,6 +4,7 @@ import cl.uchile.dcc.scrabble.MemoryOpFactory.TypesFactory.ScrTypesFactory;
 import cl.uchile.dcc.scrabble.types.numbers.ScrBinary;
 import cl.uchile.dcc.scrabble.types.numbers.ScrFloat;
 import cl.uchile.dcc.scrabble.types.numbers.ScrInt;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Objects;
 
@@ -13,7 +14,7 @@ import java.util.Objects;
  *
  * @author Felix Melo Aviles
  */
-public class ScrString extends AbstractType{
+public class ScrString extends AbstractType implements Comparable<ScrString> {
 
     /**
      * then immutable value of this ScrString
@@ -84,5 +85,16 @@ public class ScrString extends AbstractType{
      */
     public ScrString add(ScrString addend){
         return addend.addToString(this);
+    }
+
+    /**
+     * Compares this ScrString with another ScrString, if the Object called on is greater than the parameter (ASCII value), the return will be 1 or more,
+     * if the values are the same, the return will be 0, otherwise it'll be -1 or less
+     * @param o the ScrString to be compared with
+     * @return 1 or more if the object called on is greater then the parameter, 0 if equals, -1 or less if the called object is smaller
+     */
+    @Override
+    public int compareTo(ScrString o) {
+        return this.getValue().compareTo(o.getValue());
     }
 }

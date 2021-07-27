@@ -6,16 +6,16 @@ import cl.uchile.dcc.scrabble.types.SType;
 /**
  * Class that's able to save a variable and assign its value later
  */
-public class AsignableVariables implements TreeNodes {
+public class AssignableVariables implements TreeNodes, ITreeNodes {
 
     private ScrNode value;
     private final String key;
 
     /**
-     * The constructor methos for this class, initially it only recieves the name of the variable
+     * The constructor method for this class, initially it only receives the name of the variable
      * @param key the identification of the variable
      */
-    public AsignableVariables(String key){
+    public AssignableVariables(String key){
         this.key=key;
     }
 
@@ -30,7 +30,7 @@ public class AsignableVariables implements TreeNodes {
     }
 
     /**
-     * sets the corresponding value to it key
+     * sets the corresp|onding value to it key
      * @param value the value contained by the variable
      */
     public void setValue(ScrNode value) {

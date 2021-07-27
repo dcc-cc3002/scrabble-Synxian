@@ -157,4 +157,34 @@ public abstract class AbstractNodeTypes implements ScrNode {
         return null;
     }
 
+    @Override
+    public int compareTo(ScrNode node){
+        return 0;
+    }
+
+    @Override
+    public Integer compareToInt(NodeInt node){
+        return null;
+    }
+
+    @Override
+    public Integer compareToFloat(NodeFloat node){
+        return null;
+    }
+
+    @Override
+    public Integer compareToBinary(NodeBinary node){
+        return null;
+    }
+
+    @Override
+    public Integer compareToString(NodeString node){
+        return null;
+    }
+
+    @Override
+    public Integer compareToBool(NodeBool node){
+        return null;
+    }
+
 }

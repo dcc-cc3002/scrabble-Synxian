@@ -85,4 +85,11 @@ public class ScrBoolTest {
         assertFalse(bool1.neg().getValue());
         assertTrue(bool2.neg().getValue());
     }
+
+    @Test
+    void compareTest(){
+        assertEquals(bool1.compareTo(bool2),1);
+        assertEquals(bool2.compareTo(bool1),-1);
+        assertEquals(bool2.compareTo(new ScrBool(false)),0);
+    }
 }

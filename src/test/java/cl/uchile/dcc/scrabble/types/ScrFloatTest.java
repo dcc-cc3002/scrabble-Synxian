@@ -115,8 +115,8 @@ public class ScrFloatTest {
         assertEquals(new ScrFloat(74598.4), testStructure4.mulAScrInt(testStructure3));
         assertEquals(new ScrFloat(1800056.07004), testStructure4.multiply(testStructure5));
         assertEquals(new ScrFloat(-869.4), float2.mulAScrFloat(new ScrFloat(-12.6)));
-        assertEquals(new ScrFloat(176400.0), testStructure7.multiplyAScrFloat(float1));
-        assertEquals(new ScrFloat(8518.464), testStructure8.multiplyAScrFloat(testStructure1));
+        assertEquals(new ScrFloat(176400.0), testStructure7.mulAScrFloat(float1));
+        assertEquals(new ScrFloat(8518.464), testStructure8.mulAScrFloat(testStructure1));
     }
 
     @Test
@@ -136,5 +136,23 @@ public class ScrFloatTest {
         assertEquals(new ScrFloat(-12.6/69.0), float2.divideAScrFloat(new ScrFloat(-12.6)));
         assertEquals(new ScrFloat(1.0), testStructure7.divideAScrFloat(float1));
         assertEquals(new ScrFloat(123.456/69.0), testStructure8.divideAScrFloat(testStructure1));
+    }
+
+    @Test
+    void compareTest(){
+        var testStructure1 = new ScrInt(12);
+        var testStructure2 = new ScrFloat(145.7);
+        var testStructure3 = new ScrFloat(0.4);
+        var testStructure4 = new ScrFloat(12.0);
+        var testStructure5 = new ScrBinary("1001001010000111");
+        var testStructure6 = new ScrBinary("0000000000000000");
+        var testStructure7 = new ScrFloat(-28025.0);
+
+        assertEquals(testStructure2.compareTo(testStructure1),1);
+        assertEquals(testStructure3.compareTo(testStructure2),-1);
+        assertEquals(testStructure4.compareTo(testStructure1),0);
+        assertEquals(testStructure7.compareTo(testStructure5),0);
+        assertEquals(testStructure7.compareTo(testStructure6),-1);
+
     }
 }

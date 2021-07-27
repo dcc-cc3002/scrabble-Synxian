@@ -1,10 +1,7 @@
 package cl.uchile.dcc.scrabble.MemoryOpFactory.AstFactory;
 
-import cl.uchile.dcc.scrabble.AST.AsignableVariables;
-import cl.uchile.dcc.scrabble.AST.Nodes.NodeBool;
+import cl.uchile.dcc.scrabble.AST.AssignableVariables;
 import cl.uchile.dcc.scrabble.AST.Nodes.ScrNode;
-import cl.uchile.dcc.scrabble.MemoryOpFactory.TypesFactory.ScrTypesFactory;
-import cl.uchile.dcc.scrabble.types.ScrBool;
 
 import java.util.Hashtable;
 
@@ -15,17 +12,17 @@ public class AssignableVariablesFactory {
     /**
      * the hashtable that stores each variable
      */
-    public static Hashtable<String, AsignableVariables> varHashtable = new Hashtable<>();
+    public static Hashtable<String, AssignableVariables> varHashtable = new Hashtable<>();
 
     /**
      * Checks if a AssignableVariable with the given key exists, if it does, returns the existing object, otherwise it creates it
      * @param key the key of the variable
      * @return a AssignableVariable object
      */
-    public static AsignableVariables get(String key) {
-        AsignableVariables variable = varHashtable.get(key);
+    public static AssignableVariables get(String key) {
+        AssignableVariables variable = varHashtable.get(key);
         if (variable == null) {
-            variable= new AsignableVariables(key);
+            variable= new AssignableVariables(key);
             varHashtable.put(key,variable);
             return variable;
         }
@@ -38,7 +35,7 @@ public class AssignableVariablesFactory {
      * @param value the value to be set
      */
     public static void setVariable(String key, ScrNode value){
-        AsignableVariables variable = get(key);
+        AssignableVariables variable = get(key);
         variable.setValue(value);
         varHashtable.put(key, variable);
     }

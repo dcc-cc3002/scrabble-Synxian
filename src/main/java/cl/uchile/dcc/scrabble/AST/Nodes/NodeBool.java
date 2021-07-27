@@ -116,4 +116,24 @@ public class NodeBool extends AbstractNodeTypes{
         return this;
     }
 
+    /**
+     * {@inheritDoc}
+     * @param node {@inheritDoc}
+     * @return {@inheritDoc}
+     */
+    @Override
+    public int compareTo(ScrNode node){
+        return node.compareToBool(this);
+    }
+
+    /**
+     * Compares this nodeBool to another nodeBool, having in mind that true>false, if the param object is greater than
+     * the called one, the return will be 1 or more, if equals 0, -1 or less otherwise
+     * @param node the nodeBool to be compared with
+     * @return {@inheritDoc}
+     */
+    public Integer compareToBool(NodeBool node){
+        return Boolean.compare(node.getValue().getValue(),this.getValue().getValue());
+    }
+
 }

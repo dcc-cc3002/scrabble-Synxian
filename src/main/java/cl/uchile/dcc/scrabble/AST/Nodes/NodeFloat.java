@@ -167,4 +167,44 @@ public class NodeFloat extends AbstractNodeTypes{
     public NodeFloat toNodeFloat() {
         return this;
     }
+
+    /**
+     * {@inheritDoc}
+     * @param node {@inheritDoc}
+     * @return {@inheritDoc}
+     */
+    @Override
+    public int compareTo(ScrNode node){
+        return node.compareToFloat(this);
+    }
+
+    /**
+     * {@inheritDoc}
+     * @param node {@inheritDoc}
+     * @return {@inheritDoc}
+     */
+    @Override
+    public Integer compareToInt(NodeInt node){
+        return node.getValue().compareTo(this.getValue());
+    }
+
+    /**
+     * {@inheritDoc}
+     * @param node {@inheritDoc}
+     * @return {@inheritDoc}
+     */
+    @Override
+    public Integer compareToFloat(NodeFloat node){
+        return node.getValue().compareTo(this.getValue());
+    }
+
+    /**
+     * {@inheritDoc}
+     * @param node {@inheritDoc}
+     * @return {@inheritDoc}
+     */
+    @Override
+    public Integer compareToBinary(NodeBinary node){
+        return node.getValue().compareTo(this.getValue());
+    }
 }

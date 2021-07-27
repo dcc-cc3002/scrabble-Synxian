@@ -49,13 +49,40 @@ can be operated by a three of operations, there is not a graphic way to see this
 Some memory optimizations were implemented, so that if there are 2 ScrInt ehith the same value, only one object will be created.
 ---
 For the second part
-of the assignment, the procedure was very similar to the first part, the same logic was applied to reach every requirement, now the same operations described before cand be used in a Ast, the same operations and transformation are avalible for the scrable type nodes.
+of the assignment, the procedure was very similar to the first part, the same logic was applied to reach every requirement, now the same operations described before are available in the Ast, the same operations and transformation are available for the scrable type nodes.
 
 There is no interactive interface yet,
 so the only way to run the program is to execute the test contained in [test](src/test)
 ---
-##Running Scrabble
-Coming soon
+##T3
+This time
+several new additions were made, in first place, now is possible to compare Scr types and nodes;
+The ScrInt, ScrFloat and ScrBinary types  can be compared to each other, while the 
+ScrBool can only be compared with another ScrBool, the same goes for ScrString. Something similar
+happens with the nodes, Int, Float and Binary nodes can be compared with each other, while a Bool and String Node
+can only be compared with the same type. If two incompatible Node types get compared,
+they will be treated as equals for transformation purposes.
+For the comparisons, when comparing two elements with the compareTo method, if the object called on is greater than
+the one given as parameter, the return will be the Integer 1 or more, if the values are the same, the return will be the
+integer 0, otherwise, the return will be -1 or less.
+While comparing String, it's return depends on the ASCII value of the string, with Bool, true is higher than false.
 
+Also,
+now the if and while conditions are available, a short description depicting general aspects of each instruction
+will be listed down below
+
+#If: 
+This method receives 3 parameters, first an Ast with the condition to be met (this Ast must converge to a BoolNode, 
+otherwise it won't work), then the ast to be executed if the condition is met, and finally, the ast to be executed if the condition is not.
+
+#While:
+This method receives 2 parameters, first the condition for the continuous execution of the loop, and secondly, the code block to be executed 
+while the condition is met.
+
+
+#Extras:
+As extras,
+the do-while, for and while-Else loops were implemented, as well as a Seq class, in charge of sequentially execute an Ast,
+also, comparison Nodes were added, these include greater than, less than, and equal to.
 ---
 Documentation available at [javaDoc](javadoc/index.html)

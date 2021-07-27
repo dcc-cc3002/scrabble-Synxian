@@ -11,7 +11,7 @@ import java.util.Objects;
  *
  * @author Felix Melo Aviles
  */
-public class ScrFloat implements IOperations {
+public class ScrFloat implements IOperations, Comparable<IOperations> {
 
     /**
      * then immutable value of this ScrString
@@ -208,11 +208,18 @@ public class ScrFloat implements IOperations {
         return ScrTypesFactory.getScrFloatFlyweight(num.getValue()/this.getValue());
     }
 
-
-
-
-
-
+    /**
+     * Compares this ScrFloat with the given one, if the Object called on is greater than the parameter, the return will be 1 or more,
+     * if the values are the same, the return will be 0, otherwise it'll be -1 or less
+     * @param num  the ScrObject to be compared with
+     * @return 1 or more if the object called on is greater then the parameter, 0 if equals, -1 or less if the called object is smaller
+     */
+    @Override
+    public int compareTo(IOperations num) {
+        Double esta=Double.valueOf(this.getValue());
+        Double com=Double.valueOf(num.toScrFloat().getValue());
+        return Double.compare(esta, com);
+    }
 
 
 }

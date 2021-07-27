@@ -6,5 +6,7 @@ cl.uchile.dcc.scrabble.AST.Transformations
 cl.uchile.dcc.scrabble.gui
 cl.uchile.dcc.scrabble.MemoryOpFactory.AstFactory
 cl.uchile.dcc.scrabble.MemoryOpFactory.TypesFactory
+cl.uchile.dcc.scrabble.T3Shenanigans
+cl.uchile.dcc.scrabble.T3Shenanigans.ControlDeFlujo
 cl.uchile.dcc.scrabble.types
 cl.uchile.dcc.scrabble.types.numbers

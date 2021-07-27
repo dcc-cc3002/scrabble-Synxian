@@ -69,4 +69,11 @@ public class ScrStringTest {
         assertEquals(new ScrString("is a lietrue"), testStructure5.addToString(str2));
         assertEquals(new ScrString("the cakeis a liefalse"), testStructure6.addToString(str2.addToString(str1)));
     }
+
+    @Test
+    void compareTest(){
+        assertEquals(str1.compareTo(str2),11);
+        assertEquals(str2.compareTo(str1),-11);
+        assertEquals(str1.compareTo(str1),0);
+    }
 }

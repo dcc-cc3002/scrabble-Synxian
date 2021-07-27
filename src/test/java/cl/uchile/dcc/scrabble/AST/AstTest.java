@@ -9,7 +9,6 @@ import cl.uchile.dcc.scrabble.MemoryOpFactory.AstFactory.NodeTypeFactory;
 import cl.uchile.dcc.scrabble.types.SType;
 import cl.uchile.dcc.scrabble.types.numbers.ScrBinary;
 import cl.uchile.dcc.scrabble.types.numbers.ScrFloat;
-import cl.uchile.dcc.scrabble.types.numbers.ScrInt;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -430,6 +429,8 @@ public class AstTest {
         assertEquals(NodeTypeFactory.getNodeIntFlyweight(15),AssignableVariablesFactory.get("is").eval());
         assertEquals(NodeTypeFactory.getNodeStringFlyweight("great offer"),AssignableVariablesFactory.get("a").eval());
         assertEquals(NodeTypeFactory.getNodeBoolFlyweight(true),AssignableVariablesFactory.get("lie").eval());
+        AssignableVariablesFactory.setAssignableNodeFloat("cake", 12.13);
+        assertEquals(NodeTypeFactory.getNodeFloatFlyweight(12.13),AssignableVariablesFactory.get("cake").eval());
 
     }
 

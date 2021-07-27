@@ -47,4 +47,25 @@ public class NodeString extends AbstractNodeTypes{
         return (NodeString) node.addToStringNode(this);
     }
 
+    /**
+     * {@inheritDoc}
+     * @param node {@inheritDoc}
+     * @return {@inheritDoc}
+     */
+    @Override
+    public int compareTo(ScrNode node){
+        return node.compareToString(this);
+    }
+
+    /**
+     * Compares 2 string nodes, depending on their ASCII value, the return is 1 or more if the parameter object has a
+     * higher ascii value, 0 if the same, -1 or less otherwise
+     * @param node the string node to be compared with
+     * @return {@inheritDoc}
+     */
+    @Override
+    public Integer compareToString(NodeString node){
+        return node.getValue().compareTo(this.getValue());
+    }
+
 }

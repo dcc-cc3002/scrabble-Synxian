@@ -81,8 +81,27 @@ while the condition is met.
 
 
 #Extras:
+
 As extras,
 the do-while, for and while-Else loops were implemented, as well as a Seq class, in charge of sequentially execute an Ast,
 also, comparison Nodes were added, these include greater than, less than, and equal to.
+
+#For:
+It 
+receives 4 arguments, the initialization variable, the condition, the increment to the variable and the code to execute, 
+pretty similar to c and java's for (int i=0;i<n; i++)
+
+#doWhile
+Pretty 
+similar to the while statement, the only difference is that
+doWhile receives an extra parameter, Do, wich will be executed
+at least once, even if the condition for the while isn't true.
+
+#While-Else
+Similiar
+to python's while else, receives one more parameter
+than while, the else instruction, this instruction 
+will be executed if the while condition stops being met,
+actually, it'll be executed even if it's never met!
 ---
 Documentation available at [javaDoc](javadoc/index.html)

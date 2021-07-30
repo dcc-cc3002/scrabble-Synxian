@@ -30,7 +30,7 @@ public class AssignableVariables implements TreeNodes, ITreeNodes {
     }
 
     /**
-     * sets the corresp|onding value to it key
+     * sets the corresp|onding value to it's key
      * @param value the value contained by the variable
      */
     public void setValue(ScrNode value) {

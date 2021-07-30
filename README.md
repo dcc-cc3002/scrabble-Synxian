@@ -84,7 +84,7 @@ while the condition is met.
 
 As extras,
 the do-while, for and while-Else loops were implemented, as well as a Seq class, in charge of sequentially execute an Ast,
-also, comparison Nodes were added, these include greater than, less than, and equal to.
+also, comparison Nodes were added, these include greater than, greater or equal, less than, less or equal, and equal to.
 
 #For:
 It 
@@ -94,11 +94,11 @@ pretty similar to c and java's for (int i=0;i<n; i++)
 #doWhile
 Pretty 
 similar to the while statement, the only difference is that
-doWhile receives an extra parameter, Do, wich will be executed
+doWhile receives an extra parameter, Do, which will be executed
 at least once, even if the condition for the while isn't true.
 
 #While-Else
-Similiar
+Similarly
 to python's while else, receives one more parameter
 than while, the else instruction, this instruction 
 will be executed if the while condition stops being met,

@@ -6,7 +6,7 @@ import cl.uchile.dcc.scrabble.MemoryOpFactory.AstFactory.NodeTypeFactory;
  * Abstract class for the NodeTypes of the AST
  */
 public abstract class AbstractNodeTypes implements ScrNode {
-
+    //Notar que la documentacion de estas clases se encuentra presente en la interfaz, por lo que se hereda
     @Override
     public ScrNode addNode(ScrNode node) {
         return null;

@@ -13,6 +13,12 @@ public class AssignToVariable implements TreeNodes {
 
     private String var;
     private TreeNodes value;
+
+    /**
+     * Constructor method of this class
+     * @param var the variable
+     * @param value the value of the variable
+     */
     protected AssignToVariable(String var, TreeNodes value) {
         this.var=var;
         this.value=value;

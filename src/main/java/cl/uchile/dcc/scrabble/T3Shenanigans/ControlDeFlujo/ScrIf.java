@@ -33,17 +33,45 @@ public class ScrIf implements TreeNodes {
 
 
     /**
-     * evaluates the doThis Ast if the condition is met, otherwise, it evaluates the elseDo Ast
-     * @return nothing, it just executes the instruction
+     * creates the visitor object and then sends it to the accept method in this class
+     * @return nothing, it sends the instruction to the accept class
      */
     @Override
     public ScrNode eval() {
-        if(condition.eval().getValue().equals(ScrTypesFactory.getScrBoolFlyweight(true))){
-           this.doThis.eval();
-        }
-        else {
-            this.elseDo.eval();
-        }
-        return null;
+        Visitor visitor= new Visitor();
+        return this.accept(visitor);
+    }
+
+    /**
+     * Sends to the visitor class
+     * @param v the visitor object
+     * @return it will be nothing, but the action will be executed by the visitor
+     */
+    public ScrNode accept(Visitor v){
+        return v.visitorIf(this);
+    }
+
+    /**
+     * Getter fot the condition of the if
+     * @return the condition of the if
+     */
+    public TreeNodes getCondition(){
+        return this.condition;
+    }
+
+    /**
+     * Getter fot the instruction of a true condition
+     * @return instruction of a true condition
+     */
+    public TreeNodes getDoThis(){
+        return this.doThis;
+    }
+
+    /**
+     * Getter fot the instruction of a false condition
+     * @return instruction of a false condition
+     */
+    public TreeNodes getElseDo(){
+        return this.elseDo;
     }
 }

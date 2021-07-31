@@ -31,17 +31,45 @@ public class WhileElse implements TreeNodes {
 
 
     /**
-     * Executes the instruction while the condition is meet, if it stops being true, or even if it never was,
-     * executes the else instruction
-     * @return nothing, it just executes the instruction
+     * creates the visitor object and then sends it to the accept method in this class
+     * @return nothing, it sends the instruction to the accept class
      */
     @Override
     public ScrNode eval() {
-        this.doThis.eval();
-        while(condition.eval().getValue().equals(ScrTypesFactory.getScrBoolFlyweight(true))){
-            this.doThis.eval();
-        }
-        this.elseDo.eval();
-        return null;
+        Visitor visitor= new Visitor();
+        return this.accept(visitor);
+    }
+
+    /**
+     * Sends to the visitor class
+     * @param v the visitor object
+     * @return it will be nothing, but the action will be executed by the visitor
+     */
+    public ScrNode accept(Visitor v){
+        return v.visitorWhileElse(this);
+    }
+
+    /**
+     * Getter of the condition to be executed while the condition is met
+     * @return the condition to be executed while the condition is met
+     */
+    public TreeNodes getDoThis() {
+        return doThis;
+    }
+
+    /**
+     * Getter for the condition under which the loop continues active
+     * @return the condition under which the loop continues active
+     */
+    public TreeNodes getCondition() {
+        return condition;
+    }
+
+    /**
+     * Getter for the instruction to be executed when the while stops being executed/even if it's not executed
+     * @return the instruction to be executed when the while stops being executed/even if it's not executed
+     */
+    public TreeNodes getElseDo() {
+        return elseDo;
     }
 }

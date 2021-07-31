@@ -3,182 +3,274 @@
   <ID>JAVA</ID>
   <OriginalElement>C:/Users/felix/Desktop/Tarea3Finalmente/src/main/java</OriginalElement>
   <nodes>
-    <node x="2886.1598837209303" y="182.0">cl.uchile.dcc.scrabble.AST.Transformations.toNodeBool</node>
-    <node x="378.0" y="589.0">cl.uchile.dcc.scrabble.gui.SystemInfo</node>
-    <node x="125.0" y="513.0">cl.uchile.dcc.scrabble.types.numbers.ScrInt</node>
-    <node x="989.515625" y="339.0">cl.uchile.dcc.scrabble.MemoryOpFactory.AstFactory.NodeBinaryFactory</node>
-    <node x="1773.1598837209303" y="182.0">cl.uchile.dcc.scrabble.AST.Operations.MayorIgual</node>
-    <node x="1609.1598837209303" y="182.0">cl.uchile.dcc.scrabble.AST.Operations.Multiplication</node>
-    <node x="2008.1598837209303" y="182.0">cl.uchile.dcc.scrabble.AST.Operations.Subtraction</node>
-    <node x="196.0" y="589.0">cl.uchile.dcc.scrabble.MemoryOpFactory.TypesFactory.ScrIntFactory</node>
-    <node x="958.2848837209303" y="0.0">cl.uchile.dcc.scrabble.AST.ITreeNodes</node>
-    <node x="1433.515625" y="339.0">cl.uchile.dcc.scrabble.MemoryOpFactory.AstFactory.NodeFloatFactory</node>
-    <node x="665.4098837209303" y="182.0">cl.uchile.dcc.scrabble.AST.Operations.MenorIgual</node>
-    <node x="838.1598837209303" y="101.0">cl.uchile.dcc.scrabble.T3Shenanigans.AssignToVariable</node>
-    <node x="241.828125" y="420.0">cl.uchile.dcc.scrabble.types.AbstractType</node>
-    <node x="2573.665697674419" y="101.0">cl.uchile.dcc.scrabble.AST.Transformations.AbstractSoloOperations</node>
-    <node x="493.25" y="420.0">cl.uchile.dcc.scrabble.types.LogicalOp</node>
-    <node x="631.0348837209303" y="0.0">cl.uchile.dcc.scrabble.AST.TreeNodes</node>
-    <node x="711.515625" y="339.0">cl.uchile.dcc.scrabble.MemoryOpFactory.AstFactory.AssignableVariablesFactory</node>
-    <node x="422.15988372093034" y="101.0">cl.uchile.dcc.scrabble.T3Shenanigans.ControlDeFlujo.WhileElse</node>
-    <node x="563.515625" y="513.0">cl.uchile.dcc.scrabble.types.ScrBool</node>
-    <node x="2485.515625" y="339.0">cl.uchile.dcc.scrabble.MemoryOpFactory.TypesFactory.ScrTypesFactory</node>
-    <node x="1479.1598837209303" y="182.0">cl.uchile.dcc.scrabble.AST.Operations.Addition</node>
-    <node x="1126.1598837209303" y="101.0">cl.uchile.dcc.scrabble.T3Shenanigans.ControlDeFlujo.ScrFor</node>
-    <node x="813.4098837209303" y="182.0">cl.uchile.dcc.scrabble.AST.Operations.Igual</node>
-    <node x="348.875" y="339.0">cl.uchile.dcc.scrabble.types.SType</node>
-    <node x="432.515625" y="513.0">cl.uchile.dcc.scrabble.types.ScrString</node>
-    <node x="3040.1598837209303" y="182.0">cl.uchile.dcc.scrabble.AST.Transformations.Not</node>
-    <node x="1862.515625" y="339.0">cl.uchile.dcc.scrabble.MemoryOpFactory.AstFactory.NodeBoolFactory</node>
-    <node x="558.1598837209303" y="101.0">cl.uchile.dcc.scrabble.T3Shenanigans.ControlDeFlujo.ScrWhile</node>
-    <node x="0.0" y="263.0">cl.uchile.dcc.scrabble.AST.Nodes.NodeInt</node>
-    <node x="1920.1598837209303" y="182.0">cl.uchile.dcc.scrabble.AST.Operations.Or</node>
-    <node x="299.515625" y="513.0">cl.uchile.dcc.scrabble.types.numbers.ScrBinary</node>
-    <node x="1043.4098837209303" y="182.0">cl.uchile.dcc.scrabble.AST.Operations.Menor</node>
-    <node x="279.1831395348838" y="101.0">cl.uchile.dcc.scrabble.AST.Nodes.ScrNode</node>
-    <node x="0.0" y="513.0">cl.uchile.dcc.scrabble.types.numbers.ScrFloat</node>
-    <node x="1444.1598837209303" y="101.0">cl.uchile.dcc.scrabble.AST.Operations.AbstractOperations</node>
-    <node x="918.4098837209303" y="182.0">cl.uchile.dcc.scrabble.AST.Operations.Division</node>
-    <node x="0.0" y="589.0">cl.uchile.dcc.scrabble.MemoryOpFactory.TypesFactory.ScrBoolFactory</node>
-    <node x="2557.1598837209303" y="182.0">cl.uchile.dcc.scrabble.AST.Transformations.toNodeFloat</node>
-    <node x="266.0" y="263.0">cl.uchile.dcc.scrabble.AST.Nodes.NodeString</node>
-    <node x="126.0" y="263.0">cl.uchile.dcc.scrabble.AST.Nodes.NodeBool</node>
-    <node x="242.68313953488382" y="182.0">cl.uchile.dcc.scrabble.AST.Nodes.AbstractNodeTypes</node>
-    <node x="54.765625" y="420.0">cl.uchile.dcc.scrabble.types.numbers.IOperations</node>
-    <node x="688.1598837209303" y="101.0">cl.uchile.dcc.scrabble.T3Shenanigans.ControlDeFlujo.ScrDoWhile</node>
-    <node x="2075.515625" y="339.0">cl.uchile.dcc.scrabble.MemoryOpFactory.TypesFactory.ScrBinaryFactory</node>
-    <node x="2255.1598837209303" y="182.0">cl.uchile.dcc.scrabble.AST.Transformations.toNodeString</node>
-    <node x="2688.515625" y="339.0">cl.uchile.dcc.scrabble.MemoryOpFactory.AstFactory.NodeIntFactory</node>
-    <node x="556.0" y="263.0">cl.uchile.dcc.scrabble.AST.Nodes.NodeBinary</node>
-    <node x="2887.515625" y="339.0">cl.uchile.dcc.scrabble.MemoryOpFactory.TypesFactory.ScrFloatFactory</node>
-    <node x="1212.515625" y="339.0">cl.uchile.dcc.scrabble.MemoryOpFactory.AstFactory.NodeStringFactory</node>
-    <node x="2713.1598837209303" y="182.0">cl.uchile.dcc.scrabble.AST.Transformations.toNodeBinaryC</node>
-    <node x="2156.1598837209303" y="182.0">cl.uchile.dcc.scrabble.AST.Operations.And</node>
-    <node x="1239.1598837209303" y="101.0">cl.uchile.dcc.scrabble.AST.AssignableVariables</node>
-    <node x="414.0" y="263.0">cl.uchile.dcc.scrabble.AST.Nodes.NodeFloat</node>
-    <node x="703.0" y="589.0">cl.uchile.dcc.scrabble.gui.App</node>
-    <node x="2281.515625" y="339.0">cl.uchile.dcc.scrabble.MemoryOpFactory.TypesFactory.ScrStringFactory</node>
-    <node x="1158.4098837209303" y="182.0">cl.uchile.dcc.scrabble.AST.Operations.Mayor</node>
-    <node x="1648.515625" y="339.0">cl.uchile.dcc.scrabble.MemoryOpFactory.AstFactory.NodeTypeFactory</node>
-    <node x="1025.1598837209303" y="101.0">cl.uchile.dcc.scrabble.T3Shenanigans.ControlDeFlujo.ScrIf</node>
-    <node x="548.0" y="589.0">cl.uchile.dcc.scrabble.gui.Scrabble</node>
-    <node x="828.0" y="589.0">cl.uchile.dcc.scrabble.T3Shenanigans.Seq</node>
-    <node x="2417.1598837209303" y="182.0">cl.uchile.dcc.scrabble.AST.Transformations.toNodeInt</node>
+    <node x="2154.5" y="273.0">cl.uchile.dcc.scrabble.AST.Transformations.toNodeBool</node>
+    <node x="1847.0" y="720.0">cl.uchile.dcc.scrabble.gui.SystemInfo</node>
+    <node x="150.0" y="619.0">cl.uchile.dcc.scrabble.types.numbers.ScrInt</node>
+    <node x="2377.0" y="455.0">cl.uchile.dcc.scrabble.MemoryOpFactory.AstFactory.NodeBinaryFactory</node>
+    <node x="534.5" y="273.0">cl.uchile.dcc.scrabble.AST.Operations.MayorIgual</node>
+    <node x="1480.5" y="273.0">cl.uchile.dcc.scrabble.AST.Operations.Multiplication</node>
+    <node x="1644.5" y="273.0">cl.uchile.dcc.scrabble.AST.Operations.Subtraction</node>
+    <node x="638.0" y="720.0">cl.uchile.dcc.scrabble.MemoryOpFactory.TypesFactory.ScrIntFactory</node>
+    <node x="1241.1511627906975" y="0.0">cl.uchile.dcc.scrabble.AST.ITreeNodes</node>
+    <node x="1637.0" y="455.0">cl.uchile.dcc.scrabble.MemoryOpFactory.AstFactory.NodeFloatFactory</node>
+    <node x="1218.5" y="273.0">cl.uchile.dcc.scrabble.AST.Operations.MenorIgual</node>
+    <node x="2986.0" y="123.0">cl.uchile.dcc.scrabble.T3Shenanigans.AssignToVariable</node>
+    <node x="260.0" y="536.0">cl.uchile.dcc.scrabble.types.AbstractType</node>
+    <node x="2194.0" y="134.0">cl.uchile.dcc.scrabble.AST.Transformations.AbstractSoloOperations</node>
+    <node x="494.78125" y="536.0">cl.uchile.dcc.scrabble.types.LogicalOp</node>
+    <node x="887.0" y="455.0">cl.uchile.dcc.scrabble.MemoryOpFactory.AstFactory.AssignableVariablesFactory</node>
+    <node x="1646.5261627906975" y="0.0">cl.uchile.dcc.scrabble.AST.TreeNodes</node>
+    <node x="3352.0" y="112.0">cl.uchile.dcc.scrabble.T3Shenanigans.ControlDeFlujo.WhileElse</node>
+    <node x="565.0" y="619.0">cl.uchile.dcc.scrabble.types.ScrBool</node>
+    <node x="1644.0" y="720.0">cl.uchile.dcc.scrabble.MemoryOpFactory.TypesFactory.ScrTypesFactory</node>
+    <node x="1088.5" y="273.0">cl.uchile.dcc.scrabble.AST.Operations.Addition</node>
+    <node x="2603.0" y="101.0">cl.uchile.dcc.scrabble.T3Shenanigans.ControlDeFlujo.ScrFor</node>
+    <node x="369.32291666666663" y="455.0">cl.uchile.dcc.scrabble.types.SType</node>
+    <node x="265.0" y="619.0">cl.uchile.dcc.scrabble.types.ScrString</node>
+    <node x="983.5" y="273.0">cl.uchile.dcc.scrabble.AST.Operations.Igual</node>
+    <node x="2057.5" y="273.0">cl.uchile.dcc.scrabble.AST.Transformations.Not</node>
+    <node x="1263.0" y="455.0">cl.uchile.dcc.scrabble.MemoryOpFactory.AstFactory.NodeBoolFactory</node>
+    <node x="2807.0" y="123.0">cl.uchile.dcc.scrabble.T3Shenanigans.ControlDeFlujo.ScrWhile</node>
+    <node x="522.0" y="354.0">cl.uchile.dcc.scrabble.AST.Nodes.NodeInt</node>
+    <node x="895.5" y="273.0">cl.uchile.dcc.scrabble.AST.Operations.Or</node>
+    <node x="414.0" y="619.0">cl.uchile.dcc.scrabble.types.numbers.ScrBinary</node>
+    <node x="681.5" y="273.0">cl.uchile.dcc.scrabble.AST.Operations.Menor</node>
+    <node x="369.0" y="146.5">cl.uchile.dcc.scrabble.AST.Nodes.ScrNode</node>
+    <node x="0.0" y="619.0">cl.uchile.dcc.scrabble.types.numbers.ScrFloat</node>
+    <node x="1053.5" y="123.0">cl.uchile.dcc.scrabble.AST.Operations.AbstractOperations</node>
+    <node x="1792.5" y="273.0">cl.uchile.dcc.scrabble.AST.Operations.Division</node>
+    <node x="2712.0" y="455.0">cl.uchile.dcc.scrabble.MemoryOpFactory.TypesFactory.ScrBoolFactory</node>
+    <node x="2308.5" y="273.0">cl.uchile.dcc.scrabble.AST.Transformations.toNodeFloat</node>
+    <node x="170.0" y="354.0">cl.uchile.dcc.scrabble.AST.Nodes.NodeString</node>
+    <node x="332.5" y="273.0">cl.uchile.dcc.scrabble.AST.Nodes.AbstractNodeTypes</node>
+    <node x="680.0" y="354.0">cl.uchile.dcc.scrabble.AST.Nodes.NodeBool</node>
+    <node x="73.69010416666669" y="536.0">cl.uchile.dcc.scrabble.types.numbers.IOperations</node>
+    <node x="3173.0" y="123.0">cl.uchile.dcc.scrabble.T3Shenanigans.ControlDeFlujo.ScrDoWhile</node>
+    <node x="3044.0" y="455.0">cl.uchile.dcc.scrabble.MemoryOpFactory.TypesFactory.ScrBinaryFactory</node>
+    <node x="746.0" y="536.0">cl.uchile.dcc.scrabble.T3Shenanigans.ControlDeFlujo.Visitor</node>
+    <node x="2464.5" y="273.0">cl.uchile.dcc.scrabble.AST.Transformations.toNodeString</node>
+    <node x="744.0" y="455.0">cl.uchile.dcc.scrabble.T3Shenanigans.ControlDeFlujo.IVisitor</node>
+    <node x="0.0" y="720.0">cl.uchile.dcc.scrabble.MemoryOpFactory.AstFactory.NodeIntFactory</node>
+    <node x="345.0" y="354.0">cl.uchile.dcc.scrabble.AST.Nodes.NodeBinary</node>
+    <node x="944.0" y="720.0">cl.uchile.dcc.scrabble.MemoryOpFactory.TypesFactory.ScrFloatFactory</node>
+    <node x="2008.0" y="455.0">cl.uchile.dcc.scrabble.MemoryOpFactory.AstFactory.NodeStringFactory</node>
+    <node x="2626.5" y="273.0">cl.uchile.dcc.scrabble.AST.Transformations.toNodeBinaryC</node>
+    <node x="796.5" y="273.0">cl.uchile.dcc.scrabble.AST.Operations.And</node>
+    <node x="1660.0" y="123.0">cl.uchile.dcc.scrabble.AST.AssignableVariables</node>
+    <node x="0.0" y="354.0">cl.uchile.dcc.scrabble.AST.Nodes.NodeFloat</node>
+    <node x="2172.0" y="720.0">cl.uchile.dcc.scrabble.gui.App</node>
+    <node x="322.0" y="720.0">cl.uchile.dcc.scrabble.MemoryOpFactory.TypesFactory.ScrStringFactory</node>
+    <node x="1366.5" y="273.0">cl.uchile.dcc.scrabble.AST.Operations.Mayor</node>
+    <node x="1430.0" y="720.0">cl.uchile.dcc.scrabble.MemoryOpFactory.AstFactory.NodeTypeFactory</node>
+    <node x="2424.0" y="112.0">cl.uchile.dcc.scrabble.T3Shenanigans.ControlDeFlujo.ScrIf</node>
+    <node x="2017.0" y="720.0">cl.uchile.dcc.scrabble.gui.Scrabble</node>
+    <node x="1247.0" y="720.0">cl.uchile.dcc.scrabble.T3Shenanigans.Seq</node>
+    <node x="1917.5" y="273.0">cl.uchile.dcc.scrabble.AST.Transformations.toNodeInt</node>
   </nodes>
   <notes />
   <edges>
-    <edge source="cl.uchile.dcc.scrabble.AST.AssignableVariables" target="cl.uchile.dcc.scrabble.AST.ITreeNodes" relationship="REALIZATION">
-      <point x="46.25" y="-15.5" />
-      <point x="1377.9098837209303" y="71.0" />
-      <point x="1579.1598837209303" y="71.0" />
-      <point x="1579.1598837209303" y="51.0" />
-      <point x="1054.2848837209303" y="51.0" />
-      <point x="32.0" y="15.5" />
-    </edge>
     <edge source="cl.uchile.dcc.scrabble.AST.Operations.Or" target="cl.uchile.dcc.scrabble.AST.Operations.AbstractOperations" relationship="GENERALIZATION">
       <point x="0.0" y="-15.5" />
-      <point x="1954.1598837209303" y="157.0" />
-      <point x="1534.1598837209303" y="157.0" />
-      <point x="0.0" y="15.5" />
-    </edge>
-    <edge source="cl.uchile.dcc.scrabble.types.numbers.ScrInt" target="cl.uchile.dcc.scrabble.types.AbstractType" relationship="GENERALIZATION">
-      <point x="22.25" y="-15.5" />
-      <point x="191.75" y="482.0" />
-      <point x="311.328125" y="482.0" />
-      <point x="0.0" y="15.5" />
+      <point x="929.5" y="248.0" />
+      <point x="1143.5" y="248.0" />
+      <point x="0.0" y="39.0" />
     </edge>
     <edge source="cl.uchile.dcc.scrabble.AST.Operations.MenorIgual" target="cl.uchile.dcc.scrabble.AST.Operations.AbstractOperations" relationship="GENERALIZATION">
+      <point x="-2.2737367544323206E-13" y="-15.5" />
+      <point x="1282.4999999999998" y="248.0" />
+      <point x="1143.5" y="248.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="cl.uchile.dcc.scrabble.AST.Transformations.AbstractSoloOperations" target="cl.uchile.dcc.scrabble.AST.ITreeNodes" relationship="REALIZATION">
+      <point x="-52.5" y="-28.0" />
+      <point x="2246.5" y="81.0" />
+      <point x="1706.25" y="81.0" />
+      <point x="1706.25" y="51.0" />
+      <point x="1337.1511627906975" y="51.0" />
+      <point x="32.0" y="15.5" />
+    </edge>
+    <edge source="cl.uchile.dcc.scrabble.AST.Operations.AbstractOperations" target="cl.uchile.dcc.scrabble.AST.TreeNodes" relationship="REALIZATION">
+      <point x="45.0" y="-39.0" />
+      <point x="1188.5" y="71.0" />
+      <point x="2695.0" y="71.0" />
+      <point x="2695.0" y="61.0" />
+      <point x="1739.5261627906975" y="61.0" />
+      <point x="31.0" y="15.5" />
+    </edge>
+    <edge source="cl.uchile.dcc.scrabble.T3Shenanigans.ControlDeFlujo.ScrDoWhile" target="cl.uchile.dcc.scrabble.AST.TreeNodes" relationship="REALIZATION">
+      <point x="0.0" y="-39.0" />
+      <point x="3252.5" y="71.0" />
+      <point x="2695.0" y="71.0" />
+      <point x="2695.0" y="61.0" />
+      <point x="1739.5261627906975" y="61.0" />
+      <point x="31.0" y="15.5" />
+    </edge>
+    <edge source="cl.uchile.dcc.scrabble.types.numbers.IOperations" target="cl.uchile.dcc.scrabble.types.SType" relationship="INTERFACE_GENERALIZATION">
       <point x="0.0" y="-15.5" />
-      <point x="729.4098837209303" y="157.0" />
-      <point x="1534.1598837209303" y="157.0" />
+      <point x="138.19010416666669" y="506.0" />
+      <point x="392.32291666666663" y="506.0" />
+      <point x="-23.0" y="15.5" />
+    </edge>
+    <edge source="cl.uchile.dcc.scrabble.types.numbers.ScrInt" target="cl.uchile.dcc.scrabble.types.numbers.IOperations" relationship="REALIZATION">
+      <point x="-23.75" y="-28.0" />
+      <point x="173.75" y="598.0" />
+      <point x="138.19010416666669" y="598.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="cl.uchile.dcc.scrabble.AST.Operations.Multiplication" target="cl.uchile.dcc.scrabble.AST.Operations.AbstractOperations" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="1552.5" y="248.0" />
+      <point x="1143.5" y="248.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="cl.uchile.dcc.scrabble.AST.Transformations.toNodeBool" target="cl.uchile.dcc.scrabble.AST.Transformations.AbstractSoloOperations" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="2221.5" y="248.0" />
+      <point x="2299.0" y="248.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="cl.uchile.dcc.scrabble.types.AbstractType" target="cl.uchile.dcc.scrabble.types.SType" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="329.5" y="516.0" />
+      <point x="493.19791666666663" y="516.0" />
+      <point x="493.19791666666663" y="506.0" />
+      <point x="438.32291666666663" y="506.0" />
+      <point x="23.0" y="15.5" />
+    </edge>
+    <edge source="cl.uchile.dcc.scrabble.AST.AssignableVariables" target="cl.uchile.dcc.scrabble.AST.TreeNodes" relationship="REALIZATION">
+      <point x="46.25" y="-39.0" />
+      <point x="1798.75" y="71.0" />
+      <point x="2695.0" y="71.0" />
+      <point x="2695.0" y="61.0" />
+      <point x="1739.5261627906975" y="61.0" />
+      <point x="31.0" y="15.5" />
+    </edge>
+    <edge source="cl.uchile.dcc.scrabble.AST.Operations.Division" target="cl.uchile.dcc.scrabble.AST.Operations.AbstractOperations" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="1845.0" y="248.0" />
+      <point x="1143.5" y="248.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="cl.uchile.dcc.scrabble.types.numbers.ScrFloat" target="cl.uchile.dcc.scrabble.types.numbers.IOperations" relationship="REALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="65.0" y="598.0" />
+      <point x="138.19010416666669" y="598.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="cl.uchile.dcc.scrabble.types.numbers.ScrBinary" target="cl.uchile.dcc.scrabble.types.numbers.IOperations" relationship="REALIZATION">
+      <point x="-43.66666666666663" y="-28.0" />
+      <point x="435.83333333333337" y="598.0" />
+      <point x="138.19010416666669" y="598.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="cl.uchile.dcc.scrabble.AST.Nodes.ScrNode" target="cl.uchile.dcc.scrabble.AST.ITreeNodes" relationship="INTERFACE_GENERALIZATION">
+      <point x="-27.25" y="-15.5" />
+      <point x="396.25" y="51.0" />
+      <point x="1273.1511627906975" y="51.0" />
+      <point x="-32.0" y="15.5" />
+    </edge>
+    <edge source="cl.uchile.dcc.scrabble.T3Shenanigans.ControlDeFlujo.Visitor" target="cl.uchile.dcc.scrabble.T3Shenanigans.ControlDeFlujo.IVisitor" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="cl.uchile.dcc.scrabble.T3Shenanigans.ControlDeFlujo.ScrIf" target="cl.uchile.dcc.scrabble.AST.TreeNodes" relationship="REALIZATION">
+      <point x="0.0" y="-50.0" />
+      <point x="2503.5" y="71.0" />
+      <point x="2695.0" y="71.0" />
+      <point x="2695.0" y="61.0" />
+      <point x="1739.5261627906975" y="61.0" />
+      <point x="31.0" y="15.5" />
+    </edge>
+    <edge source="cl.uchile.dcc.scrabble.AST.Nodes.NodeFloat" target="cl.uchile.dcc.scrabble.AST.Nodes.AbstractNodeTypes" relationship="GENERALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="75.0" y="329.0" />
+      <point x="423.5" y="329.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="cl.uchile.dcc.scrabble.AST.Operations.Menor" target="cl.uchile.dcc.scrabble.AST.Operations.AbstractOperations" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="729.0" y="248.0" />
+      <point x="1143.5" y="248.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="cl.uchile.dcc.scrabble.AST.Operations.MayorIgual" target="cl.uchile.dcc.scrabble.AST.Operations.AbstractOperations" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="598.0" y="248.0" />
+      <point x="1143.5" y="248.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="cl.uchile.dcc.scrabble.AST.AssignableVariables" target="cl.uchile.dcc.scrabble.AST.ITreeNodes" relationship="REALIZATION">
+      <point x="-46.25" y="-39.0" />
+      <point x="1706.25" y="51.0" />
+      <point x="1337.1511627906975" y="51.0" />
+      <point x="32.0" y="15.5" />
+    </edge>
+    <edge source="cl.uchile.dcc.scrabble.types.numbers.ScrInt" target="cl.uchile.dcc.scrabble.types.AbstractType" relationship="GENERALIZATION">
+      <point x="23.75" y="-28.0" />
+      <point x="221.25" y="588.0" />
+      <point x="329.5" y="588.0" />
       <point x="0.0" y="15.5" />
     </edge>
     <edge source="cl.uchile.dcc.scrabble.AST.Transformations.toNodeInt" target="cl.uchile.dcc.scrabble.AST.Transformations.AbstractSoloOperations" relationship="GENERALIZATION">
       <point x="0.0" y="-15.5" />
-      <point x="2477.1598837209303" y="157.0" />
-      <point x="2678.665697674419" y="157.0" />
-      <point x="0.0" y="15.5" />
+      <point x="1977.5" y="248.0" />
+      <point x="2299.0" y="248.0" />
+      <point x="0.0" y="28.0" />
     </edge>
     <edge source="cl.uchile.dcc.scrabble.AST.Nodes.NodeBinary" target="cl.uchile.dcc.scrabble.AST.Nodes.AbstractNodeTypes" relationship="GENERALIZATION">
-      <point x="0.0" y="-15.5" />
-      <point x="621.0" y="238.0" />
-      <point x="333.6831395348838" y="238.0" />
+      <point x="0.0" y="-28.0" />
       <point x="0.0" y="15.5" />
-    </edge>
-    <edge source="cl.uchile.dcc.scrabble.AST.Transformations.AbstractSoloOperations" target="cl.uchile.dcc.scrabble.AST.ITreeNodes" relationship="REALIZATION">
-      <point x="52.5" y="-15.5" />
-      <point x="2731.165697674419" y="71.0" />
-      <point x="1579.1598837209303" y="71.0" />
-      <point x="1579.1598837209303" y="51.0" />
-      <point x="1054.2848837209303" y="51.0" />
-      <point x="32.0" y="15.5" />
     </edge>
     <edge source="cl.uchile.dcc.scrabble.AST.Transformations.toNodeString" target="cl.uchile.dcc.scrabble.AST.Transformations.AbstractSoloOperations" relationship="GENERALIZATION">
       <point x="0.0" y="-15.5" />
-      <point x="2326.1598837209303" y="157.0" />
-      <point x="2678.665697674419" y="157.0" />
-      <point x="0.0" y="15.5" />
+      <point x="2535.5" y="248.0" />
+      <point x="2299.0" y="248.0" />
+      <point x="0.0" y="28.0" />
     </edge>
     <edge source="cl.uchile.dcc.scrabble.types.numbers.ScrBinary" target="cl.uchile.dcc.scrabble.types.AbstractType" relationship="GENERALIZATION">
-      <point x="0.0" y="-15.5" />
-      <point x="356.015625" y="482.0" />
-      <point x="311.328125" y="482.0" />
+      <point x="0.0" y="-28.0" />
+      <point x="479.5" y="588.0" />
+      <point x="329.5" y="588.0" />
       <point x="0.0" y="15.5" />
-    </edge>
-    <edge source="cl.uchile.dcc.scrabble.AST.Operations.AbstractOperations" target="cl.uchile.dcc.scrabble.AST.TreeNodes" relationship="REALIZATION">
-      <point x="-45.0" y="-15.5" />
-      <point x="1489.1598837209303" y="81.0" />
-      <point x="1065.6598837209303" y="81.0" />
-      <point x="1065.6598837209303" y="61.0" />
-      <point x="724.0348837209303" y="61.0" />
-      <point x="31.0" y="15.5" />
     </edge>
     <edge source="cl.uchile.dcc.scrabble.AST.Operations.Igual" target="cl.uchile.dcc.scrabble.AST.Operations.AbstractOperations" relationship="GENERALIZATION">
       <point x="0.0" y="-15.5" />
-      <point x="855.9098837209303" y="157.0" />
-      <point x="1534.1598837209303" y="157.0" />
-      <point x="0.0" y="15.5" />
-    </edge>
-    <edge source="cl.uchile.dcc.scrabble.T3Shenanigans.ControlDeFlujo.ScrDoWhile" target="cl.uchile.dcc.scrabble.AST.TreeNodes" relationship="REALIZATION">
-      <point x="0.0" y="-15.5" />
-      <point x="753.1598837209303" y="81.0" />
-      <point x="1065.6598837209303" y="81.0" />
-      <point x="1065.6598837209303" y="61.0" />
-      <point x="724.0348837209303" y="61.0" />
-      <point x="31.0" y="15.5" />
+      <point x="1026.0" y="248.0" />
+      <point x="1143.5" y="248.0" />
+      <point x="0.0" y="39.0" />
     </edge>
     <edge source="cl.uchile.dcc.scrabble.T3Shenanigans.AssignToVariable" target="cl.uchile.dcc.scrabble.AST.TreeNodes" relationship="REALIZATION">
-      <point x="0.0" y="-15.5" />
-      <point x="921.6598837209303" y="81.0" />
-      <point x="1065.6598837209303" y="81.0" />
-      <point x="1065.6598837209303" y="61.0" />
-      <point x="724.0348837209303" y="61.0" />
+      <point x="0.0" y="-39.0" />
+      <point x="3069.5" y="71.0" />
+      <point x="2695.0" y="71.0" />
+      <point x="2695.0" y="61.0" />
+      <point x="1739.5261627906975" y="61.0" />
       <point x="31.0" y="15.5" />
     </edge>
     <edge source="cl.uchile.dcc.scrabble.AST.Nodes.NodeString" target="cl.uchile.dcc.scrabble.AST.Nodes.AbstractNodeTypes" relationship="GENERALIZATION">
-      <point x="0.0" y="-15.5" />
-      <point x="330.0" y="238.0" />
-      <point x="333.6831395348838" y="238.0" />
-      <point x="0.0" y="15.5" />
-    </edge>
-    <edge source="cl.uchile.dcc.scrabble.AST.Nodes.NodeInt" target="cl.uchile.dcc.scrabble.AST.Nodes.AbstractNodeTypes" relationship="GENERALIZATION">
-      <point x="0.0" y="-15.5" />
-      <point x="53.0" y="238.0" />
-      <point x="333.6831395348838" y="238.0" />
+      <point x="0.0" y="-28.0" />
+      <point x="247.5" y="329.0" />
+      <point x="423.5" y="329.0" />
       <point x="0.0" y="15.5" />
     </edge>
     <edge source="cl.uchile.dcc.scrabble.AST.Transformations.toNodeBinaryC" target="cl.uchile.dcc.scrabble.AST.Transformations.AbstractSoloOperations" relationship="GENERALIZATION">
       <point x="0.0" y="-15.5" />
-      <point x="2789.6598837209303" y="157.0" />
-      <point x="2678.665697674419" y="157.0" />
+      <point x="2703.0" y="248.0" />
+      <point x="2299.0" y="248.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="cl.uchile.dcc.scrabble.AST.Nodes.NodeInt" target="cl.uchile.dcc.scrabble.AST.Nodes.AbstractNodeTypes" relationship="GENERALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="591.0" y="329.0" />
+      <point x="423.5" y="329.0" />
       <point x="0.0" y="15.5" />
     </edge>
     <edge source="cl.uchile.dcc.scrabble.AST.Transformations.AbstractSoloOperations" target="cl.uchile.dcc.scrabble.AST.TreeNodes" relationship="REALIZATION">
-      <point x="-52.5" y="-15.5" />
-      <point x="2626.165697674419" y="81.0" />
-      <point x="1065.6598837209303" y="81.0" />
-      <point x="1065.6598837209303" y="61.0" />
-      <point x="724.0348837209303" y="61.0" />
+      <point x="52.5" y="-28.0" />
+      <point x="2351.5" y="71.0" />
+      <point x="2695.0" y="71.0" />
+      <point x="2695.0" y="61.0" />
+      <point x="1739.5261627906975" y="61.0" />
       <point x="31.0" y="15.5" />
     </edge>
     <edge source="cl.uchile.dcc.scrabble.AST.Nodes.AbstractNodeTypes" target="cl.uchile.dcc.scrabble.AST.Nodes.ScrNode" relationship="REALIZATION">
@@ -187,200 +279,110 @@
     </edge>
     <edge source="cl.uchile.dcc.scrabble.AST.Operations.Addition" target="cl.uchile.dcc.scrabble.AST.Operations.AbstractOperations" relationship="GENERALIZATION">
       <point x="0.0" y="-15.5" />
-      <point x="0.0" y="15.5" />
-    </edge>
-    <edge source="cl.uchile.dcc.scrabble.types.numbers.IOperations" target="cl.uchile.dcc.scrabble.types.SType" relationship="INTERFACE_GENERALIZATION">
-      <point x="0.0" y="-15.5" />
-      <point x="119.265625" y="390.0" />
-      <point x="371.875" y="390.0" />
-      <point x="-23.0" y="15.5" />
+      <point x="0.0" y="39.0" />
     </edge>
     <edge source="cl.uchile.dcc.scrabble.AST.Nodes.ScrNode" target="cl.uchile.dcc.scrabble.AST.TreeNodes" relationship="INTERFACE_GENERALIZATION">
-      <point x="-27.25" y="-15.5" />
-      <point x="306.4331395348838" y="61.0" />
-      <point x="662.0348837209303" y="61.0" />
+      <point x="27.25" y="-15.5" />
+      <point x="450.75" y="61.0" />
+      <point x="1677.5261627906975" y="61.0" />
       <point x="-31.0" y="15.5" />
     </edge>
-    <edge source="cl.uchile.dcc.scrabble.types.numbers.ScrInt" target="cl.uchile.dcc.scrabble.types.numbers.IOperations" relationship="REALIZATION">
-      <point x="-22.25" y="-15.5" />
-      <point x="147.25" y="492.0" />
-      <point x="119.265625" y="492.0" />
-      <point x="0.0" y="15.5" />
-    </edge>
     <edge source="cl.uchile.dcc.scrabble.AST.Nodes.NodeBool" target="cl.uchile.dcc.scrabble.AST.Nodes.AbstractNodeTypes" relationship="GENERALIZATION">
-      <point x="0.0" y="-15.5" />
-      <point x="186.0" y="238.0" />
-      <point x="333.6831395348838" y="238.0" />
+      <point x="0.0" y="-28.0" />
+      <point x="754.0" y="329.0" />
+      <point x="423.5" y="329.0" />
       <point x="0.0" y="15.5" />
     </edge>
     <edge source="cl.uchile.dcc.scrabble.T3Shenanigans.ControlDeFlujo.WhileElse" target="cl.uchile.dcc.scrabble.AST.TreeNodes" relationship="REALIZATION">
-      <point x="0.0" y="-15.5" />
-      <point x="480.15988372093034" y="81.0" />
-      <point x="1065.6598837209303" y="81.0" />
-      <point x="1065.6598837209303" y="61.0" />
-      <point x="724.0348837209303" y="61.0" />
+      <point x="0.0" y="-50.0" />
+      <point x="3431.5" y="71.0" />
+      <point x="2695.0" y="71.0" />
+      <point x="2695.0" y="61.0" />
+      <point x="1739.5261627906975" y="61.0" />
       <point x="31.0" y="15.5" />
     </edge>
     <edge source="cl.uchile.dcc.scrabble.AST.Operations.AbstractOperations" target="cl.uchile.dcc.scrabble.AST.ITreeNodes" relationship="REALIZATION">
-      <point x="45.0" y="-15.5" />
-      <point x="1579.1598837209303" y="51.0" />
-      <point x="1054.2848837209303" y="51.0" />
+      <point x="-45.0" y="-39.0" />
+      <point x="1098.5" y="81.0" />
+      <point x="1706.25" y="81.0" />
+      <point x="1706.25" y="51.0" />
+      <point x="1337.1511627906975" y="51.0" />
       <point x="32.0" y="15.5" />
-    </edge>
-    <edge source="cl.uchile.dcc.scrabble.AST.Operations.Multiplication" target="cl.uchile.dcc.scrabble.AST.Operations.AbstractOperations" relationship="GENERALIZATION">
-      <point x="0.0" y="-15.5" />
-      <point x="1681.1598837209303" y="157.0" />
-      <point x="1534.1598837209303" y="157.0" />
-      <point x="0.0" y="15.5" />
     </edge>
     <edge source="cl.uchile.dcc.scrabble.AST.Operations.Mayor" target="cl.uchile.dcc.scrabble.AST.Operations.AbstractOperations" relationship="GENERALIZATION">
       <point x="0.0" y="-15.5" />
-      <point x="1205.4098837209303" y="157.0" />
-      <point x="1534.1598837209303" y="157.0" />
-      <point x="0.0" y="15.5" />
+      <point x="1413.5" y="248.0" />
+      <point x="1143.5" y="248.0" />
+      <point x="0.0" y="39.0" />
     </edge>
     <edge source="cl.uchile.dcc.scrabble.T3Shenanigans.ControlDeFlujo.ScrFor" target="cl.uchile.dcc.scrabble.AST.TreeNodes" relationship="REALIZATION">
-      <point x="0.0" y="-15.5" />
-      <point x="1172.6598837209303" y="81.0" />
-      <point x="1065.6598837209303" y="81.0" />
-      <point x="1065.6598837209303" y="61.0" />
-      <point x="724.0348837209303" y="61.0" />
+      <point x="0.0" y="-61.0" />
+      <point x="2695.0" y="61.0" />
+      <point x="1739.5261627906975" y="61.0" />
       <point x="31.0" y="15.5" />
-    </edge>
-    <edge source="cl.uchile.dcc.scrabble.AST.Transformations.toNodeBool" target="cl.uchile.dcc.scrabble.AST.Transformations.AbstractSoloOperations" relationship="GENERALIZATION">
-      <point x="0.0" y="-15.5" />
-      <point x="2953.1598837209303" y="157.0" />
-      <point x="2678.665697674419" y="157.0" />
-      <point x="0.0" y="15.5" />
-    </edge>
-    <edge source="cl.uchile.dcc.scrabble.types.AbstractType" target="cl.uchile.dcc.scrabble.types.SType" relationship="REALIZATION">
-      <point x="0.0" y="-15.5" />
-      <point x="311.328125" y="400.0" />
-      <point x="471.875" y="400.0" />
-      <point x="471.875" y="390.0" />
-      <point x="417.875" y="390.0" />
-      <point x="23.0" y="15.5" />
-    </edge>
-    <edge source="cl.uchile.dcc.scrabble.AST.AssignableVariables" target="cl.uchile.dcc.scrabble.AST.TreeNodes" relationship="REALIZATION">
-      <point x="-46.25" y="-15.5" />
-      <point x="1285.4098837209303" y="81.0" />
-      <point x="1065.6598837209303" y="81.0" />
-      <point x="1065.6598837209303" y="61.0" />
-      <point x="724.0348837209303" y="61.0" />
-      <point x="31.0" y="15.5" />
-    </edge>
-    <edge source="cl.uchile.dcc.scrabble.AST.Operations.Division" target="cl.uchile.dcc.scrabble.AST.Operations.AbstractOperations" relationship="GENERALIZATION">
-      <point x="0.0" y="-15.5" />
-      <point x="970.9098837209303" y="157.0" />
-      <point x="1534.1598837209303" y="157.0" />
-      <point x="0.0" y="15.5" />
-    </edge>
-    <edge source="cl.uchile.dcc.scrabble.types.numbers.ScrBinary" target="cl.uchile.dcc.scrabble.types.numbers.IOperations" relationship="REALIZATION">
-      <point x="-37.66666666666663" y="-15.5" />
-      <point x="318.34895833333337" y="492.0" />
-      <point x="119.265625" y="492.0" />
-      <point x="0.0" y="15.5" />
-    </edge>
-    <edge source="cl.uchile.dcc.scrabble.types.numbers.ScrFloat" target="cl.uchile.dcc.scrabble.types.numbers.IOperations" relationship="REALIZATION">
-      <point x="0.0" y="-15.5" />
-      <point x="52.5" y="492.0" />
-      <point x="119.265625" y="492.0" />
-      <point x="0.0" y="15.5" />
-    </edge>
-    <edge source="cl.uchile.dcc.scrabble.AST.Nodes.ScrNode" target="cl.uchile.dcc.scrabble.AST.ITreeNodes" relationship="INTERFACE_GENERALIZATION">
-      <point x="27.25" y="-15.5" />
-      <point x="360.9331395348838" y="71.0" />
-      <point x="990.2848837209303" y="71.0" />
-      <point x="-32.0" y="15.5" />
     </edge>
     <edge source="cl.uchile.dcc.scrabble.types.numbers.ScrBinary" target="cl.uchile.dcc.scrabble.types.LogicalOp" relationship="REALIZATION">
-      <point x="37.666666666666686" y="-15.5" />
-      <point x="393.68229166666663" y="472.0" />
-      <point x="553.25" y="472.0" />
+      <point x="43.66666666666663" y="-28.0" />
+      <point x="523.1666666666666" y="598.0" />
+      <point x="554.78125" y="598.0" />
       <point x="0.0" y="15.5" />
     </edge>
     <edge source="cl.uchile.dcc.scrabble.T3Shenanigans.ControlDeFlujo.ScrWhile" target="cl.uchile.dcc.scrabble.AST.TreeNodes" relationship="REALIZATION">
-      <point x="0.0" y="-15.5" />
-      <point x="613.1598837209303" y="81.0" />
-      <point x="1065.6598837209303" y="81.0" />
-      <point x="1065.6598837209303" y="61.0" />
-      <point x="724.0348837209303" y="61.0" />
-      <point x="31.0" y="15.5" />
-    </edge>
-    <edge source="cl.uchile.dcc.scrabble.types.ScrBool" target="cl.uchile.dcc.scrabble.types.SType" relationship="REALIZATION">
-      <point x="25.75000000000003" y="-15.5" />
-      <point x="640.765625" y="492.0" />
-      <point x="650.265625" y="492.0" />
-      <point x="650.265625" y="400.0" />
-      <point x="471.875" y="400.0" />
-      <point x="471.875" y="390.0" />
-      <point x="417.875" y="390.0" />
-      <point x="23.0" y="15.5" />
-    </edge>
-    <edge source="cl.uchile.dcc.scrabble.T3Shenanigans.ControlDeFlujo.ScrIf" target="cl.uchile.dcc.scrabble.AST.TreeNodes" relationship="REALIZATION">
-      <point x="0.0" y="-15.5" />
-      <point x="1065.6598837209303" y="61.0" />
-      <point x="724.0348837209303" y="61.0" />
+      <point x="0.0" y="-39.0" />
+      <point x="2886.5" y="71.0" />
+      <point x="2695.0" y="71.0" />
+      <point x="2695.0" y="61.0" />
+      <point x="1739.5261627906975" y="61.0" />
       <point x="31.0" y="15.5" />
     </edge>
     <edge source="cl.uchile.dcc.scrabble.AST.Operations.Subtraction" target="cl.uchile.dcc.scrabble.AST.Operations.AbstractOperations" relationship="GENERALIZATION">
       <point x="0.0" y="-15.5" />
-      <point x="2072.1598837209303" y="157.0" />
-      <point x="1534.1598837209303" y="157.0" />
-      <point x="0.0" y="15.5" />
+      <point x="1708.5" y="248.0" />
+      <point x="1143.5" y="248.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="cl.uchile.dcc.scrabble.types.ScrBool" target="cl.uchile.dcc.scrabble.types.SType" relationship="REALIZATION">
+      <point x="33.5" y="-28.0" />
+      <point x="665.5" y="516.0" />
+      <point x="493.19791666666663" y="516.0" />
+      <point x="493.19791666666663" y="506.0" />
+      <point x="438.32291666666663" y="506.0" />
+      <point x="23.0" y="15.5" />
     </edge>
     <edge source="cl.uchile.dcc.scrabble.AST.Operations.And" target="cl.uchile.dcc.scrabble.AST.Operations.AbstractOperations" relationship="GENERALIZATION">
       <point x="0.0" y="-15.5" />
-      <point x="2195.6598837209303" y="157.0" />
-      <point x="1534.1598837209303" y="157.0" />
-      <point x="0.0" y="15.5" />
-    </edge>
-    <edge source="cl.uchile.dcc.scrabble.AST.Nodes.NodeFloat" target="cl.uchile.dcc.scrabble.AST.Nodes.AbstractNodeTypes" relationship="GENERALIZATION">
-      <point x="0.0" y="-15.5" />
-      <point x="475.0" y="238.0" />
-      <point x="333.6831395348838" y="238.0" />
-      <point x="0.0" y="15.5" />
-    </edge>
-    <edge source="cl.uchile.dcc.scrabble.AST.Operations.Menor" target="cl.uchile.dcc.scrabble.AST.Operations.AbstractOperations" relationship="GENERALIZATION">
-      <point x="0.0" y="-15.5" />
-      <point x="1090.9098837209303" y="157.0" />
-      <point x="1534.1598837209303" y="157.0" />
-      <point x="0.0" y="15.5" />
+      <point x="836.0" y="248.0" />
+      <point x="1143.5" y="248.0" />
+      <point x="0.0" y="39.0" />
     </edge>
     <edge source="cl.uchile.dcc.scrabble.AST.Transformations.toNodeFloat" target="cl.uchile.dcc.scrabble.AST.Transformations.AbstractSoloOperations" relationship="GENERALIZATION">
       <point x="0.0" y="-15.5" />
-      <point x="2625.1598837209303" y="157.0" />
-      <point x="2678.665697674419" y="157.0" />
-      <point x="0.0" y="15.5" />
+      <point x="2376.5" y="248.0" />
+      <point x="2299.0" y="248.0" />
+      <point x="0.0" y="28.0" />
     </edge>
     <edge source="cl.uchile.dcc.scrabble.types.ScrBool" target="cl.uchile.dcc.scrabble.types.LogicalOp" relationship="REALIZATION">
-      <point x="-25.75" y="-15.5" />
-      <point x="589.265625" y="472.0" />
-      <point x="553.25" y="472.0" />
-      <point x="0.0" y="15.5" />
-    </edge>
-    <edge source="cl.uchile.dcc.scrabble.AST.Operations.MayorIgual" target="cl.uchile.dcc.scrabble.AST.Operations.AbstractOperations" relationship="GENERALIZATION">
-      <point x="0.0" y="-15.5" />
-      <point x="1836.6598837209303" y="157.0" />
-      <point x="1534.1598837209303" y="157.0" />
+      <point x="-33.5" y="-28.0" />
+      <point x="598.5" y="598.0" />
+      <point x="554.78125" y="598.0" />
       <point x="0.0" y="15.5" />
     </edge>
     <edge source="cl.uchile.dcc.scrabble.types.ScrString" target="cl.uchile.dcc.scrabble.types.AbstractType" relationship="GENERALIZATION">
-      <point x="0.0" y="-15.5" />
-      <point x="488.015625" y="482.0" />
-      <point x="311.328125" y="482.0" />
+      <point x="0.0" y="-28.0" />
       <point x="0.0" y="15.5" />
     </edge>
     <edge source="cl.uchile.dcc.scrabble.AST.Transformations.Not" target="cl.uchile.dcc.scrabble.AST.Transformations.AbstractSoloOperations" relationship="GENERALIZATION">
       <point x="0.0" y="-15.5" />
-      <point x="3078.6598837209303" y="157.0" />
-      <point x="2678.665697674419" y="157.0" />
-      <point x="0.0" y="15.5" />
+      <point x="2096.0" y="248.0" />
+      <point x="2299.0" y="248.0" />
+      <point x="0.0" y="28.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic" zoom="0.4451880178457616" showDependencies="false" x="1559.0" y="310.0" />
+  <settings layout="Hierarchic" zoom="0.3956386292834891" showDependencies="false" x="1755.5" y="388.0" />
   <SelectedNodes />
-  <Categories />
+  <Categories>
+    <Category>Fields</Category>
+  </Categories>
   <SCOPE>All</SCOPE>
   <VISIBILITY>private</VISIBILITY>
 </Diagram>

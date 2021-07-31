@@ -26,15 +26,37 @@ public class ScrDoWhile implements TreeNodes{
     }
 
     /**
-     * Executes the instruction while the condition is meet
-     * @return nothing, it just executes the instruction
+     * creates the visitor object and then sends it to the accept method in this class
+     * @return nothing, it sends the instruction to the accept class
      */
     @Override
     public ScrNode eval() {
-        do {
-            this.doThis.eval();
-        }
-        while(condition.eval().getValue().equals(ScrTypesFactory.getScrBoolFlyweight(true)));
-        return null;
+        Visitor visitor= new Visitor();
+        return this.accept(visitor);
+    }
+
+    /**
+     * Sends to the visitor class
+     * @param v the visitor object
+     * @return it will be nothing, but the action will be executed by the visitor
+     */
+    public ScrNode accept(Visitor v){
+        return v.visitorDoWhile(this);
+    }
+
+    /**
+     * Getter of the condition to be executed while the condition is met/at least once, even if the condition is never met
+     * @return the condition to be executed
+     */
+    public TreeNodes getDoThis() {
+        return doThis;
+    }
+
+    /**
+     * Getter of the condition under which the loop continues active
+     * @return the condition under which the loop continues active
+     */
+    public TreeNodes getCondition() {
+        return condition;
     }
 }

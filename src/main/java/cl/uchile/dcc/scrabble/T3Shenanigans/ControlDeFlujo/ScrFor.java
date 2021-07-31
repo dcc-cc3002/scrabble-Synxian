@@ -33,16 +33,53 @@ public class ScrFor implements TreeNodes {
     }
 
     /**
-     * Executes the instruction as long as the for is being used
-     * @return nothing, it just executes the block of code
+     * creates the visitor object and then sends it to the accept method in this class
+     * @return nothing, it sends the instruction to the accept class
      */
     @Override
     public ScrNode eval() {
-        this.init.eval();
-        while(this.stopCondition.eval().getValue().equals(ScrTypesFactory.getScrBoolFlyweight(true))){
-            this.doThis.eval();
-            this.increment.eval();
-        }
-        return null;
+        Visitor visitor= new Visitor();
+        return this.accept(visitor);
+    }
+
+    /**
+     * Sends to the visitor class
+     * @param v the visitor object
+     * @return it will be nothing, but the action will be executed by the visitor
+     */
+    public ScrNode accept(Visitor v){
+        return v.visitorFor(this);
+    }
+
+    /**
+     * Getter of the increment for the initial variable that indicates how long the for will stay active
+     * @return the increment for the initial variable
+     */
+    public TreeNodes getIncrement() {
+        return increment;
+    }
+
+    /**
+     * Getter of the initial variable that indicates how long the for will stay active
+     * @return the initial variable
+     */
+    public TreeNodes getInit() {
+        return init;
+    }
+
+    /**
+     * Getter of the condition under which the for will stop
+     * @return the condition under which the for will stop
+     */
+    public TreeNodes getStopCondition() {
+        return stopCondition;
+    }
+
+    /**
+     * Getter fot the instruction of a true condition
+     * @return instruction of a true condition
+     */
+    public TreeNodes getDoThis(){
+        return this.doThis;
     }
 }
